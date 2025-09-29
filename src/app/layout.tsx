@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "UCR Vietnamese Student Assoication",
-  description: "A website for the Vietnamese Student Assoication at UC Riverside",
+  description:
+    "A website for the Vietnamese Student Assoication at UC Riverside",
 };
 
 type LayoutProps = {
