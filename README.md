@@ -1,4 +1,6 @@
-# ACM UCR Website Template
+# VSA Website
+
+The Vietnamese Student Association at UC Riverside is a student-led organization committed to promoting Vietnamese culture, unity, and personal growth. Since 1981, VSA has served as a welcoming space for students of all backgrounds to come together, celebrate heritage, and build lasting friendships. Through cultural showcases, community outreach, social events, and leadership opportunities, VSA creates a strong support system and a home away from home. 
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23407ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -13,7 +15,7 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/)
+[VSA Website Template Figma Design File]([https://www.figma.com/](https://www.figma.com/design/ElXMCnIZfC6lkSKmYyyuGH/Spring--25--VSA?node-id=84-84&p=f))
 
 ## Node.js
 
