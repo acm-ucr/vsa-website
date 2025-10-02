@@ -1,1 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import "tailwindcss";
+
+@theme {
+  --color-vsa-green-100: #b9d7c5;
+  --color-vsa-green-200: #a8d5ba;
+  --color-vsa-green-300: #439364;
+  --color-vsa-green-400: #0c472c;
+  --color-vsa-pink-100: #ecd5dc;
+  --color-vsa-pink-200: #d584b6;
+  --color-vsa-pink-300: #bf4582;
+  --color-vsa-yellow-100: #fdf6ea;
+  --color-vsa-yellow-200: #f9edcc;
+  --color-vsa-brown: #574839;
+
+  --font-vsa-main: "Playfair Display", serif;
+  --font-vsa-alt: "Montserrat", serif;
+}
