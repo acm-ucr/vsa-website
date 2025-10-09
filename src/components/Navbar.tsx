@@ -10,7 +10,7 @@ const Navigation = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="bg-[#0c472c] font-serif">
+    <nav className="bg-[#0C472C] font-serif">
       <div className="flex justify-between py-4 text-white">
         <Link href="/" className="ml-20 flex items-center gap-4">
           <Image src={VSAlogo} alt="VSAlogo" className="w-30" />
@@ -37,7 +37,7 @@ const Navigation = () => {
           ))}
         </div>
       </div>
-      <div className="h-5 bg-[#47a973]" />
+      <div className="h-5 bg-[#439364]" />
     </nav>
   );
 };
