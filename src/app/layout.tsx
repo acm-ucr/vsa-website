@@ -33,7 +33,7 @@ export default function RootLayout({ children }: LayoutProps) {
     <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>
       <body className={playfair.className}>
         <ReactQueryClientProvider>
-          {<Navbar />}
+          <Navbar />
           {children}
           {/* <Footer /> */}
         </ReactQueryClientProvider>
