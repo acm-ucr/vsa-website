@@ -10,7 +10,7 @@ const Navigation = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="bg-[#0C472C] font-serif">
+    <nav className="bg-vsa-green-400 font-serif">
       <div className="flex justify-between py-4 text-white">
         <motion.div
           className="p-2"
@@ -43,7 +43,7 @@ const Navigation = () => {
           ))}
         </div>
       </div>
-      <div className="h-5 bg-[#439364]" />
+      <div className="bg-vsa-green-300 h-5" />
     </nav>
   );
 };
