@@ -12,17 +12,17 @@ const Navigation = () => {
   return (
     <nav className="bg-[#0C472C] font-serif">
       <div className="flex justify-between py-4 text-white">
-        <Link href="/" className="ml-20 flex items-center gap-4">
-          <motion.div
-            className="p-2"
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
-          >
+        <motion.div
+          className="p-2"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+        >
+          <Link href="/" className="ml-20 flex items-center gap-4">
             <Image src={VSAlogo} alt="VSAlogo" className="w-30" />
-          </motion.div>
-          <div className="text-4xl text-nowrap">VSA UCR</div>
-        </Link>
 
+            <div className="text-4xl text-nowrap">VSA UCR</div>
+          </Link>
+        </motion.div>
         <div className="mr-20 flex items-center gap-14 text-3xl">
           {navbarLinks.map(({ link, name }, index) => (
             <motion.div
