@@ -4,7 +4,7 @@ const Example = (props: { text1: string; text2: string; text3: string }) => {
       <div className="w-full items-center gap-6 bg-blue-200 p-5 text-center">
         {props.text1}
       </div>
-      <div className="ite flex flex-row justify-center gap-24">
+      <div className="ite flex flex-row justify-center gap-11">
         <div className="w-full rounded-full bg-blue-300 p-5 text-center">
           {props.text2}
         </div>
