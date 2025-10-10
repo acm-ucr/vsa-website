@@ -15,7 +15,7 @@ The Vietnamese Student Association at UC Riverside is a student-led organization
 
 ## Figma
 
-[VSA Website Template Figma Design File](<[https://www.figma.com/](https://www.figma.com/design/ElXMCnIZfC6lkSKmYyyuGH/Spring--25--VSA?node-id=84-84&p=f)>)
+[VSA Website Template Figma Design File](https://www.figma.com/design/ElXMCnIZfC6lkSKmYyyuGH/Spring--25--VSA?node-id=84-84&p=f)
 
 ## Node.js
 
