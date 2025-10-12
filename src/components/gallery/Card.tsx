@@ -5,9 +5,9 @@ interface props {
   title: string;
   link: string;
   image1: StaticImageData;
-  alt1: string;
   image2: StaticImageData;
-  alt2: string;
+  alt1?: string;
+  alt2?: string;
 }
 const Card = ({ title, link, image1, alt1, image2, alt2 }: props) => {
   return (
@@ -27,12 +27,12 @@ const Card = ({ title, link, image1, alt1, image2, alt2 }: props) => {
         <div className="inline-flex gap-4">
           <Image
             src={image1}
-            alt={alt1}
+            alt={alt1 ? alt1: "Image 1"}
             className="border-vsa-green-400 aspect-square w-1/2 border-3 border-solid object-cover"
           />
           <Image
             src={image2}
-            alt={alt2}
+            alt={alt2 ? alt2: "Image 2"}
             className="border-vsa-green-400 aspect-square w-1/2 border-3 border-solid object-cover"
           />
         </div>
