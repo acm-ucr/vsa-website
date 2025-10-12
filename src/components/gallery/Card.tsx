@@ -2,26 +2,39 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
 interface props {
-  title: string
+  title: string;
   link: string;
   image1: StaticImageData;
   alt1: string;
   image2: StaticImageData;
   alt2: string;
 }
-const Card: React.FC<props> = ({ title, link, image1, alt1, image2, alt2 }) => {
+const Card = ({ title, link, image1, alt1, image2, alt2 }: props) => {
   return (
-    <div className=" w-full h-fit inline-flex">
-      <div className=" bg-vsa-green-300 border-vsa-green-400 border-3 border-solid w-1/5 rounded-l-2xl place-content-center text-center text-white p-7">
-        <Link href={link} className=" text-5xl font-vsa-main font-black">click here to see full gallery
-          <h1 className=" font-vsa-alt font-normal p-3">→</h1>
+    <div className="inline-flex h-fit w-full">
+      <div className="bg-vsa-green-300 border-vsa-green-400 w-1/5 place-content-center rounded-l-2xl border-3 border-solid p-7 text-center text-white decoration-solid hover:underline">
+        <Link href={link} className="font-vsa-main text-4xl font-black">
+          click here to see full gallery
+          <div className="font-vsa-alt text-center text-5xl font-black italic">
+            →
+          </div>
         </Link>
       </div>
-      <div className=" bg-vsa-yellow-100 border-vsa-green-400 border-3 border-solid w-4/5 border-l-0 rounded-r-2xl p-9 place-content-center">
-        <h1 className="font-black font-vsa-main text-vsa-pink-300 text-5xl pb-5">{title}</h1>
+      <div className="bg-vsa-yellow-100 border-vsa-green-400 w-4/5 place-content-center rounded-r-2xl border-3 border-l-0 border-solid p-9">
+        <h1 className="font-vsa-main text-vsa-pink-300 pb-5 text-5xl font-black">
+          {title}
+        </h1>
         <div className="inline-flex gap-4">
-          <Image src={image1} alt={alt1} className=" object-cover w-1/2 border-vsa-green-400 border-3 border-solid aspect-square"/>
-          <Image src={image2} alt={alt2} className=" object-cover w-1/2 border-vsa-green-400 border-3 border-solid aspect-square" />
+          <Image
+            src={image1}
+            alt={alt1}
+            className="border-vsa-green-400 aspect-square w-1/2 border-3 border-solid object-cover"
+          />
+          <Image
+            src={image2}
+            alt={alt2}
+            className="border-vsa-green-400 aspect-square w-1/2 border-3 border-solid object-cover"
+          />
         </div>
       </div>
     </div>
