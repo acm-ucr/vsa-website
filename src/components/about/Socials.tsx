@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const Socials = () => {
   return (
-    <div className="bg-vsa-yellow-100 flex h-screen max-h-147 flex-col items-center justify-center">
+    <div className="bg-vsa-yellow-100 flex flex-col items-center justify-center p-23">
       <h1 className="text-vsa-pink-300 text-3xl font-bold">
         Check Our Socials Out!
       </h1>
-      <p className="font-vsa-alt w-200 pt-5 text-center">
+      <p className="font-vsa-alt w-3/5 pt-5 text-center">
         Kick off the school year with the Vietnamese Student Association at our
         annual VSA Social during Week 0! Whether you're a returning student or
         brand new to campus, this is the perfect chance to meet new people, make
@@ -21,13 +21,13 @@ const Socials = () => {
       </p>
       <div className="flex flex-row">
         <Link href="https://www.google.com/" target="_blank">
-          <FaInstagram className="fill-vsa-pink-200 m-7 mb-10 h-40 w-40" />
+          <FaInstagram className="fill-vsa-pink-200 m-7 mb-10 size-40" />
         </Link>
         <Link href="https://www.google.com/" target="_blank">
-          <FaDiscord className="fill-vsa-pink-200 m-7 mb-10 h-40 w-40" />
+          <FaDiscord className="fill-vsa-pink-200 m-7 mb-10 size-40" />
         </Link>
         <Link href="https://www.google.com/" target="_blank">
-          <FaTiktok className="fill-vsa-pink-200 m-7 mb-10 h-40 w-40" />
+          <FaTiktok className="fill-vsa-pink-200 m-7 mb-10 size-40" />
         </Link>
       </div>
     </div>
