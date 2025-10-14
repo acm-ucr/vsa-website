@@ -18,9 +18,9 @@ const Card = ({ title, link, image1, alt1, image2, alt2 }: props) => {
           className="font-vsa-main text-4xl font-black hover:underline"
         >
           click here to see full gallery
-          <div className="font-vsa-alt text-center text-5xl font-black italic">
+          <p className="font-vsa-alt text-center text-5xl font-black italic">
             →
-          </div>
+          </p>
         </Link>
       </div>
       <div className="bg-vsa-yellow-100 border-vsa-green-400 w-4/5 place-content-center rounded-r-2xl border-3 border-l-0 border-solid p-9">
