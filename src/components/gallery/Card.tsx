@@ -12,8 +12,11 @@ interface props {
 const Card = ({ title, link, image1, alt1, image2, alt2 }: props) => {
   return (
     <div className="inline-flex h-fit w-full">
-      <div className="bg-vsa-green-300 border-vsa-green-400 w-1/5 place-content-center rounded-l-2xl border-3 border-solid p-7 text-center text-white decoration-solid hover:underline">
-        <Link href={link} className="font-vsa-main text-4xl font-black">
+      <div className="bg-vsa-green-300 border-vsa-green-400 w-1/5 place-content-center rounded-l-2xl border-3 border-solid p-7 text-center text-white decoration-solid">
+        <Link
+          href={link}
+          className="font-vsa-main text-4xl font-black hover:underline"
+        >
           click here to see full gallery
           <div className="font-vsa-alt text-center text-5xl font-black italic">
             →
@@ -21,9 +24,9 @@ const Card = ({ title, link, image1, alt1, image2, alt2 }: props) => {
         </Link>
       </div>
       <div className="bg-vsa-yellow-100 border-vsa-green-400 w-4/5 place-content-center rounded-r-2xl border-3 border-l-0 border-solid p-9">
-        <h1 className="font-vsa-main text-vsa-pink-300 pb-5 text-5xl font-black">
+        <p className="font-vsa-main text-vsa-pink-300 pb-5 text-5xl font-black">
           {title}
-        </h1>
+        </p>
         <div className="inline-flex gap-4">
           <Image
             src={image1}
