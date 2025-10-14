@@ -6,8 +6,12 @@ const Example = (props: { text1: string; text2: string; text3: string }) => {
         <div className="w-full bg-green-200 p-5 text-left">{props.text2}</div>
         <div className="w-full bg-green-200 p-5 text-right">{props.text2}</div>
       </div>
-      <div className="w-2 bg-vsa-green-200 p-10 m-2 text-right">{props.text3}</div>
-      <div className="w-1/3 bg-vsa-green-200 p-10 m-2 text-right">{props.text2}</div>
+      <div className="bg-vsa-green-200 m-2 w-2 p-10 text-right">
+        {props.text3}
+      </div>
+      <div className="bg-vsa-green-200 m-2 w-1/3 p-10 text-right">
+        {props.text2}
+      </div>
     </div>
   );
 };
