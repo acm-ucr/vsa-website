@@ -4,15 +4,22 @@ import Image, { StaticImageData } from "next/image";
 interface props {
   title: string;
   link: string;
-  image1: StaticImageData;
-  image2: StaticImageData;
-  alt1?: string;
-  alt2?: string;
+  leftimage: StaticImageData;
+  rightimage: StaticImageData;
+  leftalt: string;
+  rightalt: string;
 }
-const Card = ({ title, link, image1, alt1, image2, alt2 }: props) => {
+const Card = ({
+  title,
+  link,
+  leftimage,
+  leftalt,
+  rightimage,
+  rightalt,
+}: props) => {
   return (
-    <div className="inline-flex h-fit w-full">
-      <div className="bg-vsa-green-300 border-vsa-green-400 w-1/5 place-content-center rounded-l-2xl border-3 border-solid p-7 text-center text-white decoration-solid">
+    <div className="flex w-2/3">
+      <div className="bg-vsa-green-300 border-vsa-green-400 flex w-1/5 place-items-center rounded-l-2xl border-3 p-7 text-center text-white">
         <Link
           href={link}
           className="font-vsa-main text-4xl font-black hover:underline"
@@ -23,20 +30,20 @@ const Card = ({ title, link, image1, alt1, image2, alt2 }: props) => {
           </p>
         </Link>
       </div>
-      <div className="bg-vsa-yellow-100 border-vsa-green-400 w-4/5 place-content-center rounded-r-2xl border-3 border-l-0 border-solid p-9">
+      <div className="bg-vsa-yellow-100 border-vsa-green-400 w-4/5 rounded-r-2xl border-3 border-l-0 p-9">
         <p className="font-vsa-main text-vsa-pink-300 pb-5 text-5xl font-black">
           {title}
         </p>
         <div className="inline-flex gap-4">
           <Image
-            src={image1}
-            alt={alt1 ? alt1 : "Image 1"}
-            className="border-vsa-green-400 aspect-square w-1/2 border-3 border-solid object-cover"
+            src={leftimage}
+            alt={leftalt}
+            className="border-vsa-green-400 aspect-square w-1/2 border-3 object-cover"
           />
           <Image
-            src={image2}
-            alt={alt2 ? alt2 : "Image 2"}
-            className="border-vsa-green-400 aspect-square w-1/2 border-3 border-solid object-cover"
+            src={rightimage}
+            alt={rightalt}
+            className="border-vsa-green-400 aspect-square w-1/2 border-3 object-cover"
           />
         </div>
       </div>
