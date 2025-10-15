@@ -8,9 +8,8 @@ interface MajorEventsHeaderProps {
 
 const MajorEventsHeader = ({ title, subtitle }: MajorEventsHeaderProps) => {
   return (
-    <div className="flex flex-col items-center justify-center text-center gap-8">
-
-      <h1 className="text-vsa-green-300 font-semibold text-2xl md:text-6xl font-vsa-main">
+    <div className="flex flex-col items-center justify-center gap-8 text-center">
+      <h1 className="text-vsa-green-300 font-vsa-main text-2xl font-semibold md:text-6xl">
         {title}
       </h1>
 
@@ -24,7 +23,6 @@ const MajorEventsHeader = ({ title, subtitle }: MajorEventsHeaderProps) => {
         className=""
         priority
       />
-
     </div>
   );
 };
