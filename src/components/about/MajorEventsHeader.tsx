@@ -8,19 +8,19 @@ interface MajorEventsHeaderProps {
 
 const MajorEventsHeader = ({ title, subtitle }: MajorEventsHeaderProps) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-8 text-center px-4 py-8 max-w-5xl mx-auto">
-      <h1 className="text-vsa-green-300 font-vsa-main text-4xl sm:text-5xl md:text-6xl font-semibold">
+    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-8 px-4 py-8 text-center">
+      <h1 className="text-vsa-green-300 font-vsa-main text-4xl font-semibold sm:text-5xl md:text-6xl">
         {title}
       </h1>
 
-      <h2 className="text-vsa-brown font-vsa-alt text-xl md:text-3xl whitespace-nowrap text-ellipsis max-w-[90%] sm:max-w-[80%]">
+      <h2 className="text-vsa-brown font-vsa-alt max-w-[90%] text-xl text-ellipsis whitespace-nowrap sm:max-w-[80%] md:text-3xl">
         {subtitle}
       </h2>
 
       <Image
         src={headerImage}
         alt="About VSA Decoration"
-        className="w-5/12 h-auto object-contain mx-auto"
+        className="mx-auto h-auto w-5/12 object-contain"
         priority
       />
     </div>
