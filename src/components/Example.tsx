@@ -15,7 +15,7 @@ const Example = ({ text1, text2, text3, image }: ExampleProps) => {
       <div className="flex w-1/2 flex-row gap-1">
         <div className="w-full bg-green-200 p-5 text-left">{text2}</div>
         <Link href="/">{text3}</Link>
-        <Image src={image} alt="descriptive alt"/>
+        <Image src={image} alt="descriptive alt" />
         <div className="w-full bg-green-200 p-5 text-right">{text2}</div>
       </div>
       {/* Hint: Add another box/div here similarly to line 4 */}
