@@ -11,10 +11,10 @@ interface FindUsProps {
 const FindUs = ({ title, info, image1, image2 }: FindUsProps) => {
   return (
     <div className="bg-vsa-yellow-100 flex flex-col items-start justify-center p-20">
-      <div className="text-vsa-brown font-vsa-main p-4 pl-40 text-left text-5xl font-bold">
+      <div className="text-vsa-brown font-vsa-main p-4 pl-60 text-left text-5xl font-bold">
         {title}
       </div>
-      <div className="text-vsa-brown font-vsa-alt p-4 pl-40 text-left text-2xl">
+      <div className="text-vsa-brown font-vsa-alt p-4 pl-60 text-left text-2xl">
         {info}
       </div>
       <div className="mt-6 flex w-full items-center justify-center">
