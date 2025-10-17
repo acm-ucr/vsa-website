@@ -1,32 +1,25 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import VSAlogo from "@/public/VSA_logo.svg";
 
-interface FindUsProps {
-  title: string;
-  info: string;
-  image1: StaticImageData;
-  image2: StaticImageData;
-}
-
-const FindUs = ({ title, info, image1, image2 }: FindUsProps) => {
+const FindUs = () => {
   return (
-    <div className="bg-vsa-yellow-100 flex flex-col items-start justify-center p-20">
-      <div className="text-vsa-brown font-vsa-main p-4 pl-60 text-left text-5xl font-bold">
-        {title}
-      </div>
-      <div className="text-vsa-brown font-vsa-alt p-4 pl-60 text-left text-2xl">
-        {info}
-      </div>
+    <div className="bg-vsa-yellow-100 flex flex-col items-center justify-center p-20">
+      <h1 className="text-vsa-brown font-vsa-main w-7/12 text-left text-5xl font-bold">
+        Find Us!
+      </h1>
+      <p className="text-vsa-brown font-vsa-alt w-7/12 text-left text-2xl">
+        Come meet us at tabling by the Bell Tower every Wednesday
+      </p>
       <div className="mt-6 flex w-full items-center justify-center">
-        <Image
-          src={image1}
+        <img
+          src="/VSA_logo.svg"
           alt="First image of VSA Logo"
-          className="border-vsa-green-400 aspect-auto h-64 w-75 border-2 object-contain"
+          className="border-vsa-green-400 aspect-square w-1/5 border-2 object-contain"
         />
-        <Image
-          src={image2}
+        <img
+          src="/VSA_logo.svg"
           alt="Second image of VSA Logo"
-          className="border-vsa-green-400 aspect-auto h-64 w-75 border-2 object-contain"
+          className="border-vsa-green-400 aspect-square w-1/5 border-2 object-contain"
         />
       </div>
     </div>

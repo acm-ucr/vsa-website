@@ -6,14 +6,8 @@ import VSAlogo from "@/public/VSA_logo.svg";
 const Home = () => {
   return (
     <div>
-      <Example text1="adjust" text2="text2" text3="these" image={VSAlogo} />
-
-      <FindUs
-        title="Find Us!"
-        info="Come meet us at tabling by the Bell Tower every Wednesday"
-        image1={VSAlogo}
-        image2={VSAlogo}
-      />
+      <div className="flex h-screen w-screen items-center justify-center p-12"></div>
+      <FindUs />
     </div>
   );
 };
