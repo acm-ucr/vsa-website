@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Playfair_Display, Montserrat } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
-// import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Navbar";
 // import Footer from "@/components/Footer";
 
 const playfair = Playfair_Display({
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: LayoutProps) {
     <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>
       <body className={playfair.className}>
         <ReactQueryClientProvider>
-          {/* <Navbar /> */}
+          <Navbar />
           {children}
           {/* <Footer /> */}
         </ReactQueryClientProvider>
