@@ -1,6 +1,7 @@
 import Card from "@/components/board/Card";
 
 const Staff = () => {
+  // Example Staff Card
   return (
     <div className="flex h-screen w-screen items-center justify-center">
       <Card name="John Doe" image="/VSA_logo.svg" position="President" />

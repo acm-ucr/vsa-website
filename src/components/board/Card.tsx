@@ -1,4 +1,5 @@
 const Card = (props: { name: string; image: string; position: string }) => {
+  // Card component to display staff member information
   return (
     <div className="m-4 flex w-max flex-col items-center justify-center bg-transparent p-4 text-center">
       <img
