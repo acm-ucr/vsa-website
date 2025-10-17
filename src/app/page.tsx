@@ -1,7 +1,5 @@
 "use client";
-import Example from "@/components/Example";
 import FindUs from "@/components/home/FindUs";
-import VSAlogo from "@/public/VSA_logo.svg";
 
 const Home = () => {
   return (

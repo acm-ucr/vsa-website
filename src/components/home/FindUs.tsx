@@ -1,5 +1,4 @@
 "use client";
-import VSAlogo from "@/public/VSA_logo.svg";
 
 const FindUs = () => {
   return (
