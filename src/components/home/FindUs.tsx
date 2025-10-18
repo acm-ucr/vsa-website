@@ -1,5 +1,5 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import VSAlogo from "@/public/VSA_logo.svg";
 
 const FindUs = () => {
