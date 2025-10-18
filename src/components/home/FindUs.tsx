@@ -1,4 +1,6 @@
 "use client";
+import Image, { StaticImageData } from "next/image";
+import VSAlogo from "@/public/VSA_logo.svg";
 
 const FindUs = () => {
   return (
@@ -10,13 +12,13 @@ const FindUs = () => {
         Come meet us at tabling by the Bell Tower every Wednesday
       </p>
       <div className="mt-6 flex w-full items-center justify-center">
-        <img
-          src="/VSA_logo.svg"
+        <Image
+          src={VSAlogo}
           alt="First image of VSA Logo"
           className="border-vsa-green-400 aspect-square w-1/5 border-2 object-contain"
         />
-        <img
-          src="/VSA_logo.svg"
+        <Image
+          src={VSAlogo}
           alt="Second image of VSA Logo"
           className="border-vsa-green-400 aspect-square w-1/5 border-2 object-contain"
         />
