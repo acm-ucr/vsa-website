@@ -8,7 +8,7 @@ const MajorEventsHeader = () => {
         Our Major Events
       </div>
 
-      <div className="text-vsa-brown font-vsa-alt max-w-9/10 text-xl sm:max-w-4/5 md:text-3xl">
+      <div className="text-vsa-brown font-vsa-alt w-9/10 text-xl sm:w-4/5 md:text-3xl">
         Here are some events to expect every year!
       </div>
 
