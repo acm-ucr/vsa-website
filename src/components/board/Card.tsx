@@ -1,15 +1,23 @@
-const Card = (props: { name: string; image: string; position: string }) => {
-  // Card component to display staff member information
+import Image from "next/image";
+
+
+interface CardProps {
+  name: string;
+  image: string
+  position: string;
+}
+
+const Card = ({name, image, position }: CardProps) => {
   return (
-    <div className="m-4 flex w-max flex-col items-center justify-center bg-transparent p-4 text-center">
-      <img
-        src={props.image}
-        alt={props.name}
-        className="h-32 w-32 rounded-lg border-2 border-fuchsia-600 object-fill"
+    <div className="m-4 flex w-max flex-col items-center justify-center p-4 text-center">
+      <Image
+        src={image}
+        alt={name}
+        className="h-32 w-32 rounded-lg border-1 border-vsa-pink-300 object-contain"
       />
-      <div className="mt-2 mb-1 text-lg font-normal">{props.name}</div>
-      <div className="text-lg font-medium text-fuchsia-600">
-        {props.position}
+      <div className="mt-2 mb-1 text-vsa text-lg font-vsa">{name}</div>
+      <div className="text-lg font-bold font-vsa-main text-vsa-pink-300">
+        {position}
       </div>
     </div>
   );

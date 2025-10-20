@@ -1,10 +1,11 @@
 import Card from "@/components/board/Card";
+import VSA_logo from "@/public/VSA_logo.svg";
+
 
 const Staff = () => {
-  // Example Staff Card
   return (
     <div className="flex h-screen w-screen items-center justify-center">
-      <Card name="John Doe" image="/VSA_logo.svg" position="President" />
+      <Card name="John Doe" image={VSA_logo} position="President" />
     </div>
   );
 };
