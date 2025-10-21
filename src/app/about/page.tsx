@@ -1,10 +1,13 @@
 "use client";
+
 import MajorEventLeft from "@/components/about/MajorEventLeft";
 import Socials from "@/components/about/Socials";
 import VSAlogo from "@/public/VSA_logo.svg";
+import MajorEventsHeader from "@/components/about/MajorEventsHeader";
 const About = () => {
   return (
     <div>
+       <MajorEventsHeader />
       <MajorEventLeft
         title="General Meetings"
         description="Stay in the loop and connect with the VSA fam at our General Meetings, held three times each
