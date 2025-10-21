@@ -20,16 +20,16 @@ const MajorEventLeft = ({ images, title, description }: ProjectsProps) => {
     if (!api) {
       return;
     }
-    setCurrent(api.selectedScrollSnap() + 1);
+    setCurrent(api.selectedScrollSnap());
     api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
+      setCurrent(api.selectedScrollSnap());
     });
   }, [api]);
 
   return (
-    <div className="flex w-full">
-      <div className="flex w-1/2 flex-col items-center p-6 pl-16">
-        <Carousel setApi={setApi}>
+    <div className="flex w-full items-center justify-center gap-10">
+      <div className="mt-10 flex w-2/5 flex-col items-center justify-center">
+        <Carousel setApi={setApi} opts={{}}>
           <CarouselContent>
             {Array.from({ length: images.length }).map((_, index) => (
               <CarouselItem key={index}>
@@ -44,10 +44,11 @@ const MajorEventLeft = ({ images, title, description }: ProjectsProps) => {
           {Array.from({ length: images.length }, (_, index) => (
             <div
               key={index}
-              className={`h-2 w-2 rounded-full transition-transform ${
+              onClick={() => api?.scrollTo(index)}
+              className={`h-2.5 w-2.5 cursor-pointer rounded-full transition-transform ${
                 images.length === 1
                   ? "bg-vsa-green-400"
-                  : index + 1 === current
+                  : index === current
                     ? "bg-vsa-green-400"
                     : "bg-vsa-green-100"
               }`}
@@ -55,11 +56,11 @@ const MajorEventLeft = ({ images, title, description }: ProjectsProps) => {
           ))}
         </div>
       </div>
-      <div className="flex w-1/2 flex-col justify-center">
-        <div className="font-vsa-main text-vsa-pink-300 h-20 w-2xl pt-2 pr-10 text-center text-5xl font-bold">
+      <div className="flex w-2/5 flex-col items-center justify-center">
+        <div className="font-vsa-main text-vsa-pink-300 w-2xl p-6 pt-2 pr-10 text-center text-5xl font-bold">
           {title}
         </div>
-        <div className="font-vsa-alt w-[605px] pb-10 text-center text-2xl text-black">
+        <div className="font-vsa-alt w-11/12 text-center text-2xl text-black">
           {description}
         </div>
       </div>
