@@ -6,9 +6,9 @@ interface props {
 const Header = ({ text, title }: props) => {
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <h1 className="text-vsa-green-400 font-vsa-main text-5xl font-extrabold">
+      <p className="text-vsa-green-400 font-vsa-main text-5xl font-extrabold">
         {title}
-      </h1>
+      </p>
       <p className="font-vsa-alt m-5 text-black">{text}</p>
     </div>
   );
