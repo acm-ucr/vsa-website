@@ -31,7 +31,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>
-      <body className={`${playfair.className} bg-vsa-green-100`}>
+      <body className={`${playfair.className} bg-vsa-green-100/50`}>
         <ReactQueryClientProvider>
           <Navbar />
           {children}
