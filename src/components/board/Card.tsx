@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface CardProps {
   name: string;
-  image: string;
+  image: StaticImageData;
   position: string;
   color: string;
 }
@@ -13,7 +13,7 @@ const Card = ({ name, image, position, color }: CardProps) => {
       <Image
         src={image}
         alt={name}
-        className={`${color} h-32 w-32 rounded-lg border-2 object-contain`}
+        className={`${color} h-32 w-32 rounded-lg border-2 object-cover`}
       />
       <div className="text-vsa font-vsa mt-2 mb-1 text-lg">{name}</div>
       <div className="font-vsa-main text-vsa-pink-300 text-lg font-bold">
