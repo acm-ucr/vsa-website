@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div className="font-vsa-main text-vsa-green-400 flex w-full flex-col place-items-center gap-7 text-center text-xl">
+    <div className="font-vsa-main text-vsa-green-400 fixed top-1/2 flex w-full -translate-y-2/5 flex-col place-items-center gap-7 place-self-center text-center text-xl">
       <p className="text-8xl font-bold">404 Error</p>
       <p className="text-3xl">
         Oops! We couldn’t find the page
