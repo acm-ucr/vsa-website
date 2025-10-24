@@ -9,7 +9,6 @@ const Home = () => {
         <JoinUS />
         <FindUs />
       </div>
-
     </div>
   );
 };
