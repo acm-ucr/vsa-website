@@ -1,5 +1,3 @@
-import GalleryGrid from "@/components/gallery/GalleryGrid";
-
 import image1 from "@/public/gallery/generalmeetings/genmeetings1.webp";
 import image2 from "@/public/gallery/generalmeetings/genmeetings2.webp";
 import image3 from "@/public/gallery/generalmeetings/genmeetings3.webp";
