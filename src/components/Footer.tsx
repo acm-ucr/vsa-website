@@ -15,7 +15,7 @@ const Footer = () => {
           transition={{ duration: 0.2, ease: "easeInOut" }}
         >
           <Link href="/" className="ml-17 flex items-center gap-4">
-            <Image src={VSALogo} className="w-32" alt="UCR VSA Logo" />
+            <Image src={VSALogo} className="w-32" alt="Logo for UCR VSA" />
           </Link>
         </motion.div>
 
