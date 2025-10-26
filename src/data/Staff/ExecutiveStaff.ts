@@ -110,4 +110,14 @@ export const ExecutiveStaff = [
     image: profile,
     position: "Intern-Chair",
   },
+  {
+    name: "Tyler Huynh",
+    image: profile,
+    position: "Photographer",
+  },
+  {
+    name: "Trinh Huynh",
+    image: profile,
+    position: "Videographer",
+  },
 ];
