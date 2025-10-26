@@ -1,48 +1,113 @@
 import profile from "@/public/staff/staff_filler.jpg";
 export const ExecutiveStaff = [
   {
-    name: "First Name",
+    name: "Kyan Tran",
     image: profile,
-    position: "Position",
+    position: "Co-President",
   },
   {
-    name: "First Name",
+    name: "Emily Ho",
     image: profile,
-    position: "Position",
+    position: "Co-President",
   },
   {
-    name: "First Name",
+    name: "Derek Nguyen",
     image: profile,
-    position: "Position",
+    position: "Co-External Vice President",
   },
   {
-    name: "First Name",
+    name: "Paris Lee",
     image: profile,
-    position: "Position",
+    position: "Co-External Vice President",
   },
   {
-    name: "First Name",
+    name: "Tim Yeon",
     image: profile,
-    position: "Position",
+    position: "Intern Vice President",
   },
   {
-    name: "First Name",
+    name: "Leann Vo",
     image: profile,
-    position: "Position",
+    position: "Treasurer",
   },
   {
-    name: "First Name",
+    name: "Kassidy Quan",
     image: profile,
-    position: "Position",
+    position: "Outreach Director",
   },
   {
-    name: "First Name",
+    name: "Ivan Lieu",
     image: profile,
-    position: "Position",
+    position: "Academic Chair",
   },
   {
-    name: "First Name",
+    name: "Vanessa Pham",
     image: profile,
-    position: "Position",
+    position: "Co-ACE Chair",
+  },
+  {
+    name: "Irene Li",
+    image: profile,
+    position: "Co-ACE Chair",
+  },
+  {
+    name: "Jasmine Van",
+    image: profile,
+    position: "Co-Activities Chair",
+  },
+  {
+    name: "Trent Ho",
+    image: profile,
+    position: "Co-Activities Chair",
+  },
+  {
+    name: "Lyna Huynh",
+    image: profile,
+    position: "Co-Social Chair",
+  },
+  {
+    name: "Kyle Young",
+    image: profile,
+    position: "Co-Social Chair",
+  },
+  {
+    name: "Katie Bui",
+    image: profile,
+    position: "Co-Vietnamese Culture",
+  },
+  {
+    name: "Hayden Tonthat",
+    image: profile,
+    position: "Co-Vietnamese Culture",
+  },
+  {
+    name: "Kaylee Duong",
+    image: profile,
+    position: "Co-Welcoming Chair",
+  },
+  {
+    name: "Katelynn Dang",
+    image: profile,
+    position: "Co-Vietnamese Culture",
+  },
+  {
+    name: "Calvin Truong",
+    image: profile,
+    position: "Public Relations Chair",
+  },
+  {
+    name: "Nico Kim",
+    image: profile,
+    position: "E-Sports Coordinator",
+  },
+  {
+    name: "Joshua Ta",
+    image: profile,
+    position: "Sports Coordinator",
+  },
+  {
+    name: "Lauren Widjajawiguna",
+    image: profile,
+    position: "Intern-Chair",
   },
 ];
