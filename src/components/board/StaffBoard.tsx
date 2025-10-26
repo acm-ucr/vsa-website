@@ -1,14 +1,17 @@
 import { JSX } from "react";
 interface BoardProps {
   title: string;
+  color: string;
   children: JSX.Element | JSX.Element[];
 }
 
-const Board = ({ title, children }: BoardProps) => {
+const Board = ({ title, color, children }: BoardProps) => {
   return (
-    <div className="text-vsa-pink-200 text-center text-6xl">
-      <p className="">{title}</p>
-      <div className="grid grid-cols-3">{children}</div>
+    <div className={` text-${color} max-w-3/4 text-center text-2xl`}>
+      <p className="p-5">{title}</p>
+      <div className="grid grid-cols-3 place-items-center gap-5">
+        {children}
+      </div>
     </div>
   );
 };

@@ -1,9 +1,48 @@
-import vsa from "@/public/VSA_logo.svg";
-export const Executives = [
+import profile from "@/public/staff/staff_filler.jpg";
+export const ExecutiveStaff = [
   {
-    name: "John Doe",
-    image: { vsa },
-    position: "President",
-    color: "border-vsa-pink-300",
+    name: "First Name",
+    image: profile,
+    position: "Position",
+  },
+  {
+    name: "First Name",
+    image: profile,
+    position: "Position",
+  },
+  {
+    name: "First Name",
+    image: profile,
+    position: "Position",
+  },
+  {
+    name: "First Name",
+    image: profile,
+    position: "Position",
+  },
+  {
+    name: "First Name",
+    image: profile,
+    position: "Position",
+  },
+  {
+    name: "First Name",
+    image: profile,
+    position: "Position",
+  },
+  {
+    name: "First Name",
+    image: profile,
+    position: "Position",
+  },
+  {
+    name: "First Name",
+    image: profile,
+    position: "Position",
+  },
+  {
+    name: "First Name",
+    image: profile,
+    position: "Position",
   },
 ];
