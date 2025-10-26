@@ -1,4 +1,4 @@
-import profile from "@/public/staff/staff_filler.jpg";
+import profile from "@/public/staff/staff_filler.webp";
 export const GeneralStaff = [
   {
     name: "Megan Phan",
