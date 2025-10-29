@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div className="flex h-full w-screen flex-col items-center justify-center">
       <Landing />
+      <JoinUS />
       <FindUs />
     </div>
   );
