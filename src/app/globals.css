@@ -136,3 +136,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.text-outline {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-vsa-brown);
+  text-rendering: geometricPrecision;
+  paint-order: stroke fill;
+}
