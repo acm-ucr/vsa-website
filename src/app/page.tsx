@@ -1,4 +1,5 @@
 "use client";
+import JoinUS from "@/components/home/JoinUs";
 import FindUs from "@/components/home/FindUs";
 import Landing from "@/components/home/Landing";
 const Home = () => {
