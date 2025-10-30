@@ -9,25 +9,27 @@ const Staff = () => {
       <p className="text-vsa-green-400 m-8 text-4xl font-black">
         Meet the Staff
       </p>
-      <StaffBoard title="Executive Staff" color="vsa-pink-200">
+      <StaffBoard title="Executive Staff" text="text-vsa-pink-300">
         {ExecutiveStaff.map(({ name, image, position }, index) => (
           <Card
             key={index}
             name={name}
             image={image}
             position={position}
-            border="vsa-pink-300"
+            border="border-vsa-pink-300"
+            text="text-vsa-pink-300"
           />
         ))}
       </StaffBoard>
-      <StaffBoard title="General Staff" color="vsa-green-300">
+      <StaffBoard title="General Staff" text="text-vsa-green-300">
         {GeneralStaff.map(({ name, image, position }, index) => (
           <Card
             key={index}
             name={name}
             image={image}
             position={position}
-            border="vsa-green-400"
+            border="border-vsa-green-400"
+            text="text-vsa-green-400"
           />
         ))}
       </StaffBoard>
