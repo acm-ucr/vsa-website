@@ -4,18 +4,18 @@ interface CardProps {
   name: string;
   image: StaticImageData;
   position: string;
-  color: string;
+  border: string;
 }
 
-const Card = ({ name, image, position, color }: CardProps) => {
+const Card = ({ name, image, position, border }: CardProps) => {
   return (
     <div className="flex w-max flex-col items-center justify-center text-center">
       <Image
         src={image}
         alt={name}
-        className={`${color} aspect-8/9 w-32 rounded-lg border-2 object-cover`}
+        className={`border-${border} aspect-8/9 w-32 rounded-lg border-2 object-cover`}
       />
-      <div className="text-vsa font-vsa font-vsa-alt mt-2 mb-1 text-lg text-black">
+      <div className="text-vsa font-vsa-alt mt-2 mb-1 text-lg text-black">
         {name}
       </div>
       <div className="font-vsa-main text-vsa-pink-300 text-lg font-bold">

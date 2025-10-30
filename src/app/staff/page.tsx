@@ -16,7 +16,7 @@ const Staff = () => {
             name={name}
             image={image}
             position={position}
-            color="border-vsa-pink-300"
+            border="vsa-pink-300"
           />
         ))}
       </StaffBoard>
@@ -27,7 +27,7 @@ const Staff = () => {
             name={name}
             image={image}
             position={position}
-            color="border-vsa-pink-300"
+            border="vsa-green-400"
           />
         ))}
       </StaffBoard>
