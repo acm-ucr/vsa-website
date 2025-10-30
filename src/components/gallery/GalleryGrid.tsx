@@ -19,5 +19,3 @@ const GridCard = ({ images }: GalleryGridProp) => {
 };
 
 export default GridCard;
-
-//p-48

@@ -1,14 +1,13 @@
 "use client";
 import JoinUS from "@/components/home/JoinUs";
 import FindUs from "@/components/home/FindUs";
-
+import Landing from "@/components/home/Landing";
 const Home = () => {
   return (
-    <div>
-      <div className="flex h-screen w-screen items-center justify-center p-12">
-        <JoinUS />
-        <FindUs />
-      </div>
+    <div className="flex h-full w-screen flex-col items-center justify-center">
+      <Landing />
+      <JoinUS />
+      <FindUs />
     </div>
   );
 };
