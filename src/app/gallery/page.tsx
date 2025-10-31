@@ -5,7 +5,7 @@ const Gallery = () => {
   return (
     <div className="m-10 grid place-items-center gap-10">
       <div className="text-center">
-        <p className="font-vsa-main text-vsa-green-400 m-5 text-4xl font-bold">
+        <p className="font-vsa-main text-vsa-green-400 m-5 text-5xl font-bold">
           Events Gallery
         </p>
         <p className="font-vsa-alt">
