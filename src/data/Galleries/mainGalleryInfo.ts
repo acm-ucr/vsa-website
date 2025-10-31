@@ -56,8 +56,8 @@ export const galleryEvents = [
   {
     title: "Social",
     link: "/gallery/social",
-    leftimage: image9,
-    rightimage: image10,
+    leftimage: image10,
+    rightimage: image9,
     leftalt: "social activity",
     rightalt: "family photo",
   },
