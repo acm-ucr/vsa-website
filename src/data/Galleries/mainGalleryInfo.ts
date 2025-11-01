@@ -1,13 +1,13 @@
-import image1 from "@/public/gallery/generalmeetings/genmeetings1.webp";
-import image2 from "@/public/gallery/generalmeetings/genmeetings5.webp";
-import image3 from "@/public/gallery/aceweek/aceweek8.webp";
-import image4 from "@/public/gallery/aceweek/aceweek11.webp";
-import image5 from "@/public/gallery/vietculturenight/culturenight9.webp";
-import image6 from "@/public/gallery/vietculturenight/culturenight7.webp";
-import image7 from "@/public/gallery/welcomeweek/welcomeweek2.webp";
-import image8 from "@/public/gallery/welcomeweek/welcomeweek5.webp";
-import image9 from "@/public/gallery/social/social6.webp";
-import image10 from "@/public/gallery/social/social7.webp";
+import genmeetingsImage1 from "@/public/gallery/generalmeetings/genmeetings1.webp";
+import genmeetingsImage2 from "@/public/gallery/generalmeetings/genmeetings5.webp";
+import aceweekImage1 from "@/public/gallery/aceweek/aceweek8.webp";
+import aceweekImage2 from "@/public/gallery/aceweek/aceweek11.webp";
+import culturenightImage1 from "@/public/gallery/vietculturenight/culturenight9.webp";
+import culturenightImage2 from "@/public/gallery/vietculturenight/culturenight7.webp";
+import welcomeweekImage1 from "@/public/gallery/welcomeweek/welcomeweek2.webp";
+import welcomeweekImage2 from "@/public/gallery/welcomeweek/welcomeweek5.webp";
+import socialImage1 from "@/public/gallery/social/social6.webp";
+import socialImage2 from "@/public/gallery/social/social7.webp";
 
 import VSAIcon from "@/public/VSA_logo.svg";
 
@@ -15,8 +15,8 @@ export const galleryEvents = [
   {
     title: "General Meetings",
     link: "/gallery/generalmeetings",
-    leftimage: image1,
-    rightimage: image2,
+    leftimage: genmeetingsImage1,
+    rightimage: genmeetingsImage2,
     leftalt: "tabling",
     rightalt: "club photo",
   },
@@ -24,16 +24,16 @@ export const galleryEvents = [
   {
     title: "ACE Week",
     link: "/gallery/aceweek",
-    leftimage: image3,
-    rightimage: image4,
+    leftimage: aceweekImage1,
+    rightimage: aceweekImage2,
     leftalt: "group photo",
     rightalt: "group photo",
   },
   {
     title: "Viet Culture Week",
     link: "/gallery/vietcultureweek",
-    leftimage: image5,
-    rightimage: image6,
+    leftimage: culturenightImage1,
+    rightimage: culturenightImage2,
     leftalt: "stage photo boys",
     rightalt: "stage photo girls",
   },
@@ -48,16 +48,16 @@ export const galleryEvents = [
   {
     title: "Welcome Week",
     link: "/gallery/welcomeweek",
-    leftimage: image7,
-    rightimage: image8,
+    leftimage: welcomeweekImage1,
+    rightimage: welcomeweekImage2,
     leftalt: "welcome photo",
     rightalt: "welcome group photo",
   },
   {
     title: "Social",
     link: "/gallery/social",
-    leftimage: image10,
-    rightimage: image9,
+    leftimage: socialImage2,
+    rightimage: socialImage1,
     leftalt: "social activity",
     rightalt: "family photo",
   },
