@@ -2,16 +2,16 @@ import GalleryGrid from "@/components/gallery/GalleryGrid";
 import Header from "@/components/gallery/GalleryHeader";
 import { images } from "@/data/Galleries/welcomeWeek";
 
-const GeneralMeetings = () => {
+const WelcomeWeek = () => {
   return (
     <div className="p-48 text-2xl">
       <Header
         title="Welcome Week"
-        text="Stay in the loop and connect with the VSA fam at our General Meetings, held three times each quarter, usually every two weeks! These meetings are the perfect way to get updates on upcoming events, learn how to get more involved, and hang out with other members through fun activities and games. Each meeting wraps up with a fundraiser, so you can support VSA while enjoying great food or treats. Whether you're a returning member or new to the club, General Meetings are a fun and easy way to stay connected all year long!"
+        text="Join us for VSA Welcome Week, a full week of fun, fundraising, and community as we kick off the school year! Throughout Week 1, we’ll be hosting a variety of events including field day games, fundraiser opportunities, and a picnic. It's a great way to connect with new friends, win prizes, and support our organization. The week wraps up with our first General Meeting, where you’ll get the inside scoop on what’s coming up for the school year!"
       />
       <GalleryGrid images={images} />
     </div>
   );
 };
 
-export default GeneralMeetings;
+export default WelcomeWeek;
