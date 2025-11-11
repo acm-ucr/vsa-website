@@ -23,7 +23,7 @@ const WelcomeWeek = () => {
         <Image src={welcomeweekImage1} alt="Welcome Week" />
       </div>
       <div className="grid grid-cols-3 gap-3 pt-8">
-        <Image src={welcomeweekImage3} alt="Welcome Week" />
+        <Image src={welcomeweekImage3} alt="Welcome Week" className="w-full" />
         <Image
           src={welcomeweekImage5}
           alt="Welcome Week"
