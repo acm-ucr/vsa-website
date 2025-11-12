@@ -19,7 +19,7 @@ const Footer = () => {
           </Link>
         </motion.div>
 
-        <div className="right-0 flex">
+        <div className="flex">
           {footers.map(({ link, icon }, index) => (
             <motion.div
               className="p-2"
@@ -30,7 +30,7 @@ const Footer = () => {
               <Link
                 href={link}
                 target="_blank"
-                className="m-6 flex h-full w-full text-gray-200"
+                className="m-6 flex text-gray-200"
               >
                 {icon}
               </Link>
