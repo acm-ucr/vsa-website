@@ -1,22 +1,19 @@
 import GeneralQuestions from "@/components/faq/GeneralQuestions";
+import { GeneralQuestions as generalData } from "@/data/Faq/GeneralQuestions";
 
-const FAQ = () => {
+const FAQPage = () => {
+  const title = "General Questions";
+  const questions = generalData.map((index) => index.question);
+  const answers = generalData.map((index) => index.answer);
+  const color = "bg-vsa-pink-100";
   return (
-    <div className="">
-      <GeneralQuestions
-        title="General Questions"
-        questions={[
-          "Do I have to be Vietnamese to join VSA?",
-          "Do I have to be Vietnamese to join VSA?",
-        ]}
-        answers={[
-          "Not at all! VSA is open to everyone — we welcome individuals of all backgrounds who are interested in Vietnamese culture or simply want to be part of our community.",
-          "Not at all! VSA is open to everyone — we welcome individuals of all backgrounds who are interested in Vietnamese culture or simply want to be part of our community.",
-        ]}
-        color="bg-vsa-pink-100"
-      />
-    </div>
+    <GeneralQuestions
+      title={title}
+      questions={questions}
+      answers={answers}
+      color={color}
+    />
   );
 };
 
-export default FAQ;
+export default FAQPage;
