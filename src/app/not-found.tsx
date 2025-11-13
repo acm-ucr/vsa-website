@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div className="font-vsa-main text-vsa-green-400 flex h-[80vh] w-full flex-col items-center justify-center gap-7 text-center text-2xl">
-      <p className="text-9xl font-bold">404 Error</p>
-      <p className="text-4xl">
+    <div className="font-vsa-main text-vsa-green-400 flex h-[80vh] w-full flex-col items-center justify-center gap-7 text-center text-lg md:text-2xl">
+      <p className="text-6xl font-bold md:text-9xl">404 Error</p>
+      <p className="text-2xl md:text-4xl">
         Oops! We couldn’t find the page
         <br />
         {"you’re looking for :("}
