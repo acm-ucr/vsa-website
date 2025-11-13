@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const JoinUS = () => {
   return (
-    <div className="mx-auto flex w-4/5 flex-col px-4 py-24">
-      <div className="font-vsa-main mb-8 text-left text-6xl font-semibold text-pink-400">
+    <div className="mx-auto flex w-8/10 flex-col px-4 py-24 xl:w-7/10">
+      <div className="font-vsa-main mb-8 text-left text-4xl font-semibold text-pink-400 sm:text-5xl md:text-6xl lg:text-7xl">
         Looking to Join?
       </div>
 
-      <div className="flex w-full flex-row items-start gap-10">
-        <div className="font-vsa-alt flex w-full flex-1 flex-col gap-5 text-2xl">
+      <div className="flex w-full flex-col items-start gap-10 xl:flex-row">
+        <div className="font-vsa-alt flex w-full flex-1 flex-col gap-5 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">
           <p>
             At UCR’s Vietnamese Student Association, we’re more than just a
             club—we’re a family. Whether you’re looking to explore your cultural
@@ -19,6 +19,12 @@ const JoinUS = () => {
             where students from all backgrounds can connect, grow, and celebrate
             Vietnamese culture together.
           </p>
+
+          <Image
+            src={logo}
+            alt="VSA Logo"
+            className="mx-auto w-full object-contain py-5 shadow-lg sm:hidden"
+          />
 
           <p>
             By joining VSA, you’ll have access to mentorship through our
@@ -35,12 +41,12 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="h-4/5 w-3/4 object-contain shadow-lg"
+            className="hidden h-3/4 w-3/4 object-contain shadow-lg sm:block lg:h-4/5 lg:w-3/4"
           />
 
           <Link
             href="#"
-            className="font-vsa-alt text-vsa-brown bg-vsa-pink-100 hover:bg-vsa-pink-200 cursor-pointer rounded-3xl border-2 border-black px-8 py-3 text-2xl font-semibold shadow-lg transition-colors duration-300"
+            className="font-vsa-alt text-vsa-brown bg-vsa-pink-100 hover:bg-vsa-pink-200 cursor-pointer rounded-3xl border-2 border-black px-8 py-5 text-2xl font-semibold shadow-lg transition-colors duration-300 sm:text-2xl md:text-2xl lg:text-4xl"
           >
             Membership Form
           </Link>
