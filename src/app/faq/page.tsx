@@ -1,7 +1,7 @@
 import GeneralQuestions from "@/components/faq/GeneralQuestions";
 import { GeneralQuestions as generalData } from "@/data/Faq/GeneralQuestions";
 
-const FAQPage = () => {
+const FAQ = () => {
   const title = "General Questions";
   const questions = generalData.map((index) => index.question);
   const answers = generalData.map((index) => index.answer);
@@ -16,4 +16,4 @@ const FAQPage = () => {
   );
 };
 
-export default FAQPage;
+export default FAQ;
