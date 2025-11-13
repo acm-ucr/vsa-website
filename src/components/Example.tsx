@@ -1,16 +1,25 @@
 const Example = (props: { text1: string; text2: string; text3: string }) => {
   return (
-    <div className="flex w-3/4 flex-col items-center gap-1 bg-red-200 p-10">
-      <div className="w-1/2 bg-green-200 p-5 text-left font-bold">
+    <div className="flex w-3/4 flex-col items-center gap-6 bg-pink-200 p-10">
+      {/* Top box - light blue */}
+      <div className="w-1/2 bg-blue-200 p-8 text-center text-4xl">
         {props.text1}
       </div>
-      <div className="flex w-1/2 flex-row gap-1">
-        <div className="w-full bg-green-200 p-5 text-left font-bold text-white">
-          props.text2
+
+      {/* Middle row - two rounded blue pills */}
+      <div className="flex w-1/2 flex-row gap-4">
+        <div className="w-full rounded-full bg-blue-400 px-12 py-8 text-center text-3xl">
+          {props.text2}
         </div>
-        <div className="w-full bg-green-200 p-5 text-right">{props.text2}</div>
+        <div className="w-full rounded-full bg-blue-400 px-12 py-8 text-center text-3xl">
+          {props.text2}
+        </div>
       </div>
-      {/* Hint: Add another box/div here similarly to line 4 */}
+
+      {/* Bottom box - darker blue */}
+      <div className="w-1/2 bg-blue-600 p-8 text-center text-4xl text-white">
+        {props.text3}
+      </div>
     </div>
   );
 };
