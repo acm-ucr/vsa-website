@@ -1,5 +1,11 @@
+import Calendar from "@/components/events/CalendarEvents";
+
 const Events = () => {
-  return <div className="">Events</div>;
+  return (
+    <div>
+      <Calendar />
+    </div>
+  );
 };
 
 export default Events;
