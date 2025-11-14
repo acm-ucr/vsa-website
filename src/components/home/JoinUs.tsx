@@ -41,7 +41,7 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="hidden w-4/5 shadow-lg sm:block md:w-3/4 lg:w-2/3 xl:w-12/10 2xl:w-7/10"
+            className="hidden w-4/5 shadow-lg sm:block md:w-3/4 lg:w-2/3 xl:w-12/10 2xl:w-8/10"
           />
 
           <Link
