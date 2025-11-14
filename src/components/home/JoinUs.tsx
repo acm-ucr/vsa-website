@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const JoinUS = () => {
   return (
-    <div className="mx-auto flex w-8/10 flex-col px-4 py-24">
+    <div className="mx-auto flex w-8/10 flex-col px-4 py-24 xl:w-3/4">
       <div className="font-vsa-main mb-8 text-left text-4xl font-semibold text-pink-400 sm:text-5xl md:text-6xl lg:text-7xl">
         Looking to Join?
       </div>
@@ -41,7 +41,7 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="hidden h-4/5 w-4/5 object-contain shadow-lg sm:block lg:h-5/6 lg:w-5/6 xl:h-6/7 xl:w-6/7"
+            className="hidden w-4/5 shadow-lg sm:block md:w-3/4 lg:w-2/3 xl:w-12/10 2xl:w-7/10"
           />
 
           <Link
