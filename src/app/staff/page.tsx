@@ -5,7 +5,7 @@ import { GeneralStaff } from "@/data/Staff/GeneralStaff";
 
 const Staff = () => {
   return (
-    <div className="flex h-screen w-screen flex-col place-items-center text-center">
+    <div className="flex h-full w-full flex-col items-center text-center">
       <p className="text-vsa-green-400 m-8 text-4xl font-black">
         Meet the Staff
       </p>
