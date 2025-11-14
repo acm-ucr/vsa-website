@@ -10,7 +10,7 @@ const JoinUS = () => {
       </div>
 
       <div className="flex w-full flex-col items-start gap-10 xl:flex-row">
-        <div className="font-vsa-alt flex w-full flex-1 flex-col gap-5 text-lg sm:text-xl md:text-2xl lg:text-1xl xl:text-1xl 2xl:text-2xl">
+        <div className="font-vsa-alt lg:text-1xl xl:text-1xl flex w-full flex-1 flex-col gap-5 text-lg sm:text-xl md:text-2xl 2xl:text-2xl">
           <p>
             At UCR’s Vietnamese Student Association, we’re more than just a
             club—we’re a family. Whether you’re looking to explore your cultural
@@ -41,14 +41,8 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="
-              hidden sm:block
-              h-4/5 w-4/5       
-              lg:h-5/6 lg:w-5/6  
-              xl:h-6/7 xl:w-6/7 
-              object-contain shadow-lg
-            "
-  />
+            className="hidden h-4/5 w-4/5 object-contain shadow-lg sm:block lg:h-5/6 lg:w-5/6 xl:h-6/7 xl:w-6/7"
+          />
 
           <Link
             href="#"
