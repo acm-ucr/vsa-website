@@ -93,7 +93,7 @@ const CalendarDayCell = ({
               className="absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 p-4"
             />
           )}
-          <p
+          <div
             className={`${currentMonth ? "" : "opacity-80"} text-fit top-0 m-1 rounded-xl bg-transparent px-1 text-center md:text-right md:text-xl`}
           >
             {isToday ? (
@@ -103,7 +103,7 @@ const CalendarDayCell = ({
             ) : (
               date.getDate()
             )}
-          </p>
+          </div>
 
           {filteredEvents?.map(
             ({ title, start, end, location, description }, index) => {
