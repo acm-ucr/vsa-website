@@ -11,7 +11,7 @@ const NotFound = () => {
       </p>
       <p>
         You might find what you’re looking for in{" "}
-        <Link href="/faq" className="text-vsa-pink-300 font-semibold underline">
+        <Link href="/faq" className="text-vsa-pink-300 font-semibold underline px-2 md:px-0">
           FAQ
         </Link>
       </p>
