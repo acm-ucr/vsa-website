@@ -9,11 +9,9 @@ import aceweek8 from "@/public/gallery/aceweek/aceweek8.webp";
 import aceweek9 from "@/public/gallery/aceweek/aceweek9.webp";
 import aceweek10 from "@/public/gallery/aceweek/aceweek10.webp";
 import aceweek11 from "@/public/gallery/aceweek/aceweek11.webp";
-import lotus from "@/public/big_lotus.svg";
 
 export const AceWeekImages = [
   aceweek2,
-  lotus,
   aceweek11,
   aceweek5,
   aceweek6,
