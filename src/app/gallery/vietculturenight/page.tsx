@@ -2,7 +2,7 @@ import GalleryGrid from "@/components/gallery/GalleryGrid";
 import Header from "@/components/gallery/GalleryHeader";
 import { images } from "@/data/Galleries/VietCultureNightImages";
 
-const VietCultureWeek = () => {
+const VietCultureNight = () => {
   return (
     <div className="">
       <div className="p-48 text-2xl">
@@ -16,4 +16,4 @@ const VietCultureWeek = () => {
   );
 };
 
-export default VietCultureWeek;
+export default VietCultureNight;
