@@ -1,0 +1,44 @@
+"use client";
+import Link from "next/link";
+import UpcomingEvents from "@/components/home/UpcomingEvents";
+import { HomeUpcomingEventsInfo } from "@/data/HomeUpcomingEvents/UpcomingEventsData";
+
+const UpcomingEventsSection = () => {
+  return (
+    <div>
+      <div className="text-vsa-green-300 flex items-center justify-center p-10 text-4xl font-bold">
+        Upcoming Events
+      </div>
+      <div className="flex items-center justify-center gap-5 p-5">
+        {HomeUpcomingEventsInfo.map(
+          ({ date, time, loc, text, color }, index) => (
+            <UpcomingEvents
+              key={index}
+              date={date}
+              time={time}
+              loc={loc}
+              text={text}
+              color={color}
+            />
+          ),
+        )}
+      </div>
+      <div className="flex flex-row justify-center gap-10 pt-10">
+        <Link
+          className="bg-vsa-pink-100 text-vsa-brown flex w-1/6 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl"
+          href="#"
+        >
+          Shuttling
+        </Link>
+        <Link
+          className="bg-vsa-green-200 text-vsa-brown flex w-1/6 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl"
+          href="#"
+        >
+          RSVP
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default UpcomingEventsSection;
