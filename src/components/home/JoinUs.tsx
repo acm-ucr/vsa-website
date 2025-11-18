@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const JoinUS = () => {
   return (
-    <div className="mx-auto w-full max-w-[110rem] flex flex-col px-4 py-24">
+    <div className="mx-auto flex w-full max-w-[110rem] flex-col px-4 py-24">
       <div className="font-vsa-main mb-8 text-left text-4xl font-semibold text-pink-400 sm:text-5xl md:text-6xl lg:text-7xl">
         Looking to Join?
       </div>
