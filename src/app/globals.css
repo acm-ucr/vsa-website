@@ -10,6 +10,7 @@
   --color-vsa-green-200: #a8d5ba;
   --color-vsa-green-300: #439364;
   --color-vsa-green-400: #0c472c;
+  --color-vsa-green-500: #d1f0dd;
   --color-vsa-pink-100: #ecd5dc;
   --color-vsa-pink-200: #d584b6;
   --color-vsa-pink-300: #bf4582;
@@ -135,4 +136,13 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
