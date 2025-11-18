@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const JoinUS = () => {
   return (
-    <div className="mx-auto flex w-full max-w-[110rem] flex-col px-4 py-24">
+    <div className="mx-auto flex w-full flex-col px-4 py-24 sm:max-w-[75vw]">
       <div className="font-vsa-main mb-8 text-left text-4xl font-semibold text-pink-400 sm:text-5xl md:text-6xl lg:text-7xl">
         Looking to Join?
       </div>
 
       <div className="flex w-full flex-col items-start gap-10 xl:flex-row">
-        <div className="font-vsa-alt text-md flex w-full flex-1 flex-col gap-10 sm:text-xl md:text-xl lg:text-xl xl:max-w-[60ch] xl:text-2xl 2xl:text-2xl">
+        <div className="font-vsa-alt text-md flex w-full flex-1 flex-col gap-10 sm:text-xl md:text-xl lg:text-xl xl:max-w-[35vw] xl:text-2xl 2xl:text-2xl">
           <p>
             At UCR’s Vietnamese Student Association, we’re more than just a
             club—we’re a family. Whether you’re looking to explore your cultural
@@ -41,7 +41,7 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="hidden h-auto w-full max-w-[40rem] object-contain shadow-lg sm:block"
+            className="hidden h-auto w-full object-contain shadow-lg sm:block sm:max-w-[60vw] md:max-w-[50vw] lg:max-w-[40vw] xl:max-w-[45vw] 2xl:max-w-xl"
           />
 
           <Link

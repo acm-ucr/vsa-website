@@ -6,8 +6,8 @@ const Landing = () => {
     <div className="bg-vsa-yellow-100 relative flex h-full w-full items-center justify-center overflow-hidden">
       <Image src={landingPage} alt="Landing Image" className="mt-20" />
 
-      <div className="font-vsa-main absolute mb-10 flex h-full w-full flex-col items-center py-2 text-center font-extrabold">
-        <div className="text-vsa-green-300 h-1/4 text-[4rem] drop-shadow-2xl sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[11rem]">
+      <div className="font-vsa-main absolute mb-10 flex h-full w-full flex-col items-center py-15 text-center font-extrabold">
+        <div className="text-vsa-green-300 h-18vw text-6xl drop-shadow-2xl sm:text-8xl md:text-9xl lg:text-9xl xl:text-9xl">
           VSA
         </div>
 
