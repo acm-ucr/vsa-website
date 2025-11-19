@@ -1,17 +1,17 @@
 import GeneralQuestions from "@/components/faq/GeneralQuestions";
 import { GeneralQuestions as generalData } from "@/data/Faq/GeneralQuestions";
-import { MembershipQuestions } from "@/data/Faq/MembershipQuestions";
-import { OtherQuestions } from "@/data/Faq/OtherQuestions";
+import { MembershipQuestions as membershipData } from "@/data/Faq/MembershipQuestions";
+import { OtherQuestions as otherQuestionsData} from "@/data/Faq/OtherQuestions";
 
 const FAQ = () => {
   const questions1 = generalData.map((index) => index.question);
   const answers1 = generalData.map((index) => index.answer);
 
-  const questions2 = generalData.map((index) => index.question);
-  const answers2 = generalData.map((index) => index.answer);
+  const questions2 = membershipData.map((index) => index.question);
+  const answers2 = membershipData.map((index) => index.answer);
 
-  const questions3 = generalData.map((index) => index.question);
-  const answers3 = generalData.map((index) => index.answer);
+  const questions3 = otherQuestionsData.map((index) => index.question);
+  const answers3 = otherQuestionsData.map((index) => index.answer);
 
   return (
     <div>
