@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card = ({ name, image, affiliation, text }: CardProps) => {
   return (
-    <div className="border-vsa-green-400 shadow-[6px_6px_0_theme('colors.vsa-green-300')] flex w-1/5 flex-col items-center justify-center rounded-lg border-2 bg-white p-4">
+    <div className="border-vsa-green-400 shadow-[6px_6px_0_theme('colors.vsa-green-300')] flex w-3/4 flex-col items-center justify-center rounded-lg border-2 bg-white p-2 md:w-1/5 md:p-4">
       <div className="x-2 mt-4 flex">
         <Image
           src={image}
