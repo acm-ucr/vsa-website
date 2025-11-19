@@ -23,7 +23,6 @@ const FAQ = () => {
         titleColor="text-vsa-pink-200"
       />
 
-    
       <GeneralQuestions
         title="Membership Questions"
         questions={questions2}
@@ -32,7 +31,6 @@ const FAQ = () => {
         titleColor="text-vsa-green-300"
       />
 
-      
       <GeneralQuestions
         title="Other Related Questions"
         questions={questions3}
