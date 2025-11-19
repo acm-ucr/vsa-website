@@ -1,7 +1,7 @@
 import GeneralQuestions from "@/components/faq/GeneralQuestions";
 import { GeneralQuestions as generalData } from "@/data/Faq/GeneralQuestions";
 import { MembershipQuestions as membershipData } from "@/data/Faq/MembershipQuestions";
-import { OtherQuestions as otherQuestionsData} from "@/data/Faq/OtherQuestions";
+import { OtherQuestions as otherQuestionsData } from "@/data/Faq/OtherQuestions";
 
 const FAQ = () => {
   const questions1 = generalData.map((index) => index.question);
