@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const JoinUS = () => {
   return (
-    <div className="mx-auto flex w-4/5 flex-col px-4 py-24">
-      <div className="font-vsa-main mb-8 text-left text-6xl font-semibold text-pink-400">
+    <div className="mx-auto flex w-full flex-col px-4 py-24 sm:max-w-[75vw]">
+      <div className="font-vsa-main mb-8 text-left text-4xl font-semibold text-pink-400 sm:text-5xl md:text-6xl lg:text-7xl">
         Looking to Join?
       </div>
 
-      <div className="flex w-full flex-row items-start gap-10">
-        <div className="font-vsa-alt flex w-full flex-1 flex-col gap-5 text-2xl">
+      <div className="flex w-full flex-col items-start gap-10 xl:flex-row">
+        <div className="font-vsa-alt text-md flex w-full flex-1 flex-col gap-10 sm:text-xl md:text-xl lg:text-xl xl:max-w-[35vw] xl:text-2xl 2xl:text-2xl">
           <p>
             At UCR’s Vietnamese Student Association, we’re more than just a
             club—we’re a family. Whether you’re looking to explore your cultural
@@ -19,6 +19,12 @@ const JoinUS = () => {
             where students from all backgrounds can connect, grow, and celebrate
             Vietnamese culture together.
           </p>
+
+          <Image
+            src={logo}
+            alt="VSA Logo"
+            className="mx-auto w-9/10 object-contain py-5 shadow-lg sm:hidden"
+          />
 
           <p>
             By joining VSA, you’ll have access to mentorship through our
@@ -31,16 +37,16 @@ const JoinUS = () => {
           </p>
         </div>
 
-        <div className="flex flex-1 flex-col items-center gap-10">
+        <div className="flex w-full flex-1 flex-col items-center justify-center gap-10 xl:w-auto">
           <Image
             src={logo}
             alt="VSA Logo"
-            className="h-4/5 w-3/4 object-contain shadow-lg"
+            className="hidden h-auto w-full object-contain shadow-lg sm:block sm:max-w-[60vw] md:max-w-[50vw] lg:max-w-[40vw] xl:max-w-[45vw] 2xl:max-w-xl"
           />
 
           <Link
             href="#"
-            className="font-vsa-alt text-vsa-brown bg-vsa-pink-100 hover:bg-vsa-pink-200 cursor-pointer rounded-3xl border-2 border-black px-8 py-3 text-2xl font-semibold shadow-lg transition-colors duration-300"
+            className="font-vsa-alt text-vsa-brown bg-vsa-pink-100 hover:bg-vsa-pink-200 cursor-pointer rounded-3xl border-2 border-black px-8 py-4 text-base font-semibold shadow-lg transition-colors duration-300 sm:text-lg md:text-xl lg:text-2xl"
           >
             Membership Form
           </Link>
