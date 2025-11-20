@@ -14,7 +14,7 @@ const Card = ({ name, image, affiliation, text }: CardProps) => {
         <Image
           src={image}
           alt="Student Image"
-          className="h-28 w-28 ml-8 rounded-lg object-cover"
+          className="ml-8 h-28 w-28 rounded-lg object-cover"
         />
         <div className="mt-4 ml-16">
           <p className="font-vsa-main text-vsa-brown text-lg">{name}</p>
