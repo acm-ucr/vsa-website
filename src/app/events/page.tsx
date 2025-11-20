@@ -1,3 +1,4 @@
+import Calendar from "@/components/events/CalendarEvents";
 import GalleryButton from "@/components/events/GalleryButton";
 import EventsBoard from "@/components/events/EventBoard";
 import Card from "@/components/events/Card";
@@ -38,6 +39,7 @@ const Events = () => {
         )}
       </EventsBoard>
       <GalleryButton></GalleryButton>
+      <Calendar />
     </div>
   );
 };
