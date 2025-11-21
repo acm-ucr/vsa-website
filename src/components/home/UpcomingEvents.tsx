@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card = ({ date, time, loc, text, color }: CardProps) => {
   return (
-    <div className="border-vsa-brown flex w-1/5 flex-col items-center justify-center overflow-hidden rounded-lg border-2 bg-white">
+    <div className="border-vsa-brown flex w-3/4 flex-col items-center justify-center overflow-hidden rounded-lg border-2 bg-white md:w-1/5">
       <div
         className={`${color} border-vsa-brown h-1/3 w-full justify-center border-b-2 p-4 text-left`}
       >
