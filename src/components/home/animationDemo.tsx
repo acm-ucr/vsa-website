@@ -6,9 +6,8 @@ import VSAlogo from "@/public/VSA_logo.svg";
 
 const fadeFromRight = {
   initial: { opacity: 0, x: 50 },
-  whileInView: { opacity: 1, x: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.9, delay: 0.3 },
+  whileInView: { opacity: 1, x: 0, 
+  transition: { duration: 0.9, delay: 0.3 } },
 };
 
 const FindUs = () => {
@@ -41,8 +40,7 @@ const FindUs = () => {
         variants={fadeFromRight}
         initial="initial"
         whileInView="whileInView"
-        viewport="viewport"
-        transition="transition"
+        viewport={{ once: true }}
       >
         <Image
           src={VSAlogo}
