@@ -3,9 +3,11 @@ import JoinUS from "@/components/home/JoinUs";
 import FindUs from "@/components/home/FindUs";
 import Landing from "@/components/home/Landing";
 import UpcomingEvents from "@/components/home/UpcomingEvents";
+import AnimationDemo from "@/components/home/animationDemo";
 const Home = () => {
   return (
     <div className="flex h-full w-screen flex-col items-center justify-center">
+      <AnimationDemo />
       <Landing />
       <UpcomingEvents
         date="month, day"
@@ -16,6 +18,7 @@ const Home = () => {
       />
       <JoinUS />
       <FindUs />
+      <AnimationDemo />
     </div>
   );
 };
