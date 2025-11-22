@@ -3,8 +3,8 @@ import LotusImage from "@/public/small_lotus.svg";
 import Image from "next/image";
 const GalleryButton = () => {
   return (
-    <div className="flex flex-row items-center justify-center gap-12 p-8">
-      <Image src={LotusImage} alt="Lotus Logo" />
+    <div className="flex flex-col items-center justify-center gap-12 p-8 sm:flex-row">
+      <Image src={LotusImage} alt="Lotus Logo" className="hidden sm:block" />
 
       <Link
         href="/gallery"
@@ -15,7 +15,7 @@ const GalleryButton = () => {
         View Our gallery!
       </Link>
 
-      <Image src={LotusImage} alt="Lotus Logo" />
+      <Image src={LotusImage} alt="Lotus Logo" className="hidden sm:block" />
     </div>
   );
 };
