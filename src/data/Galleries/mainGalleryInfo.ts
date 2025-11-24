@@ -30,8 +30,8 @@ export const galleryEvents = [
     rightalt: "group photo",
   },
   {
-    title: "Viet Culture Week",
-    link: "/gallery/vietcultureweek",
+    title: "Viet Culture Night",
+    link: "/gallery/vietculturenight",
     leftimage: culturenightImage1,
     rightimage: culturenightImage2,
     leftalt: "stage photo boys",

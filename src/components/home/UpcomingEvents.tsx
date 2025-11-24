@@ -8,9 +8,9 @@ interface CardProps {
 
 const Card = ({ date, time, loc, text, color }: CardProps) => {
   return (
-    <div className="border-vsa-brown flex w-1/5 flex-col items-center justify-center overflow-hidden rounded-lg border-2 bg-white">
+    <div className="border-vsa-brown flex w-3/4 flex-col items-center justify-center overflow-hidden rounded-lg border-2 bg-white md:w-1/5">
       <div
-        className={`bg-${color} border-vsa-brown h-1/3 w-full justify-center border-b-2 p-4 text-left`}
+        className={`${color} border-vsa-brown h-1/3 w-full justify-center border-b-2 p-4 text-left`}
       >
         <p className="text-md font-vsa-main text-vsa-yellow-200 text-outline justify-center text-center text-4xl font-extrabold">
           {date}
