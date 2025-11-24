@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="flex p-3">
           {footers.map(({ link, icon }, index) => (
             <motion.div
-              className="p-0 md:p-2"
+              className="p-0 size-9 md:size-28 md:p-2"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.2, ease: "easeInOut" }}
               key={index}
