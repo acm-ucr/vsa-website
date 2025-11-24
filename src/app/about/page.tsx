@@ -24,15 +24,7 @@ quarter, usually every two weeks! These meetings are the perfect way to get upda
 events, learn how to get more involved, and hang out with other members through fun activities and games. Each meeting wraps up with a fundraiser, so you can support VSA while enjoying great food or treats. Whether you're a returning member or new to the club, General Meetings are a fun and easy way to stay connected all year long!"
         images={[VSAlogo, VSAlogo]}
       />
-      <div className="mt-10 mb-10 flex w-full justify-center">
-        <Testimonials
-          name="First Name Last Name"
-          image={VSAlogo}
-          affiliation="President"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        />
-      </div>
-
+      <Testimonials />
       <Socials />
     </div>
   );
