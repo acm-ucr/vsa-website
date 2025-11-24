@@ -10,6 +10,7 @@ interface GeneralQuestionProps {
   questions: string[];
   answers: string[];
   color: string;
+  titleColor: string;
 }
 
 const GeneralQuestions = ({
@@ -17,11 +18,14 @@ const GeneralQuestions = ({
   questions,
   answers,
   color,
+  titleColor,
 }: GeneralQuestionProps) => {
   return (
     <div className="flex items-center justify-center p-20">
       <div className="w-6xl">
-        <div className="text-vsa-pink-200 mb-4 flex items-center justify-center p-6 text-6xl font-semibold">
+        <div
+          className={`${titleColor} mb-4 flex items-center justify-center p-6 text-6xl font-semibold`}
+        >
           {title}
         </div>
         <div className="border-vsa-green-400 border-x-2 border-b-2">
