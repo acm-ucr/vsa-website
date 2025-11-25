@@ -12,7 +12,7 @@ import genmeeting5 from "@/public/gallery/generalmeetings/genmeetings5.webp";
 
 import social1 from "@/public/gallery/social/social1.webp";
 import social2 from "@/public/gallery/social/social2.webp";
-import social3 from "@/public/gallery/social/social3.webp";
+import social3 from "@/public/gallery/social/social10.webp";
 import social4 from "@/public/gallery/social/social4.webp";
 import social5 from "@/public/gallery/social/social5.webp";
 
