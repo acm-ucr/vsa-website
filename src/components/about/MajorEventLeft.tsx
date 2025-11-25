@@ -33,8 +33,12 @@ const MajorEventLeft = ({ images, title, description }: ProjectsProps) => {
           <CarouselContent>
             {Array.from({ length: images.length }).map((_, index) => (
               <CarouselItem key={index}>
-                <div className="flex items-center justify-center">
-                  <Image src={images[index]} alt={title} className="w-2xl" />
+                <div className="flex h-[60vh] max-h-[60vh] items-center justify-center">
+                  <Image
+                    src={images[index]}
+                    alt={title}
+                    className="max-h-[60vh] max-w-full object-contain"
+                  />
                 </div>
               </CarouselItem>
             ))}
