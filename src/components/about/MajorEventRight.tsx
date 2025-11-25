@@ -27,16 +27,16 @@ const MajorEventRight = ({ images, title, description }: ProjectsProps) => {
   }, [api]);
 
   return (
-    <div className="flex w-full items-center justify-center gap-10">
-      <div className="flex w-2/5 flex-col items-center justify-center">
-        <div className="font-vsa-main text-vsa-pink-300 w-2xl p-6 pt-2 pr-10 text-center text-5xl font-bold">
+    <div className="flex w-full flex-col items-center justify-center gap-8 md:flex-row md:gap-10">
+      <div className="flex w-full flex-col items-center justify-center md:w-2/5">
+        <div className="font-vsa-main text-vsa-pink-300 w-full p-4 text-center text-3xl font-bold md:w-2xl md:p-6 md:pr-10 md:text-4xl">
           {title}
         </div>
-        <div className="font-vsa-alt w-11/12 text-center text-2xl text-black">
+        <div className="font-vsa-alt w-10/12 text-center text-sm text-black md:w-11/12 md:text-xl">
           {description}
         </div>
       </div>
-      <div className="mt-10 flex w-2/5 flex-col items-center justify-center">
+      <div className="flex w-1/4 flex-col items-center justify-center md:mt-10">
         <Carousel setApi={setApi} opts={{}}>
           <CarouselContent>
             {Array.from({ length: images.length }).map((_, index) => (
