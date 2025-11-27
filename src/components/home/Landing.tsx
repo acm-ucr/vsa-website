@@ -1,10 +1,18 @@
+"use client";
 import Image from "next/image";
 import landingPage from "@/public/landing_lotus.webp";
+import { motion } from "motion/react";
 
 const Landing = () => {
   return (
     <div className="bg-vsa-yellow-100 relative flex h-full w-full items-center justify-center overflow-hidden">
-      <Image src={landingPage} alt="Landing Image" className="mt-20" />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.25 }}
+      >
+        <Image src={landingPage} alt="Landing Image" className="mt-20" />
+      </motion.div>
 
       <div className="font-vsa-main absolute mb-10 flex h-full w-full flex-col items-center py-15 text-center font-extrabold">
         <div className="text-vsa-green-300 h-18vw text-6xl drop-shadow-2xl sm:text-8xl md:text-9xl lg:text-9xl xl:text-9xl">
