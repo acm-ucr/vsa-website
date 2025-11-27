@@ -9,7 +9,7 @@ const Landing = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1.25 }}
       >
         <Image src={landingPage} alt="Landing Image" className="mt-20" />
       </motion.div>
