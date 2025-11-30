@@ -14,7 +14,7 @@ const FAQ = () => {
   const answers3 = otherQuestionsData.map((index) => index.answer);
 
   return (
-    <div>
+    <div className="mb-36">
       <GeneralQuestions
         title="General Questions"
         questions={questions1}
