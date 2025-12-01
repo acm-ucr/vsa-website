@@ -3,14 +3,19 @@ import Image from "next/image";
 import landingPage from "@/public/landing_lotus.webp";
 import { motion } from "motion/react";
 
+const fadeInAnimation = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1, transition: { duration: 1.25 } },
+};
 const Landing = () => {
   return (
-    <div className="bg-vsa-yellow-100 relative flex h-full w-full items-center justify-center overflow-hidden">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.25 }}
-      >
+    <motion.div
+      className="bg-vsa-yellow-100 relative flex h-full w-full items-center justify-center overflow-hidden"
+      variants={fadeInAnimation}
+      initial="initial"
+      whileInView="whileInView"
+    >
+      <motion.div>
         <Image src={landingPage} alt="Landing Image" className="mt-20" />
       </motion.div>
 
@@ -26,7 +31,7 @@ const Landing = () => {
       <div className="font-vsa-main text-1xl sm:text-1xl absolute mt-6 flex h-3/4 w-3/4 items-end justify-center text-center font-semibold text-white sm:mt-0 sm:w-1/2 md:w-6/10 md:text-2xl lg:w-6/10 lg:text-3xl xl:w-3xl xl:text-3xl">
         Promoting and connecting UCR students through Vietnamese culture!
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Landing;
