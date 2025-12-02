@@ -1,10 +1,19 @@
 "use client";
 import Image from "next/image";
 import VSAlogo from "@/public/VSA_logo.svg";
-
+import { motion } from "motion/react";
+const fadeInAnimation = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1, transition: { duration: 1.25 } },
+};
 const FindUs = () => {
   return (
-    <div className="bg-vsa-yellow-100 flex flex-col items-center justify-center p-20">
+    <motion.div
+      className="bg-vsa-yellow-100 flex flex-col items-center justify-center p-20"
+      variants={fadeInAnimation}
+      initial="initial"
+      whileInView="whileInView"
+    >
       <p className="text-vsa-brown font-vsa-main w-7/12 text-left text-5xl font-bold">
         Find Us!
       </p>
@@ -23,7 +32,7 @@ const FindUs = () => {
           className="border-vsa-green-400 aspect-square w-1/5 border-2 object-contain"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
