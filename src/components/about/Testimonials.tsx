@@ -6,8 +6,8 @@ const Testimonials = () => {
   const rightColumn = testimonialData.filter((_, i) => i % 2 === 1);
 
   return (
-    <div className="grid grid-cols-2 gap-2 px-50 pb-10">
-      <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-2 px-50 pb-10 lg:grid lg:grid-cols-2">
+      <div className="mt-10 flex flex-col gap-6 lg:mt-0">
         {leftColumn.map((item, index) => (
           <Card
             key={index}
@@ -18,7 +18,7 @@ const Testimonials = () => {
           />
         ))}
       </div>
-      <div className="flex flex-col gap-6 pt-40">
+      <div className="flex flex-col gap-6 lg:mt-0 lg:pt-40">
         {rightColumn.map((item, index) => (
           <Card
             key={index}
