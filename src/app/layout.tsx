@@ -28,7 +28,6 @@ export const metadata = {
 type LayoutProps = {
   children: React.ReactNode;
 };
-
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>

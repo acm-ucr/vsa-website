@@ -1,35 +1,36 @@
-import Image, { StaticImageData } from "next/image";
+import { testimonialData } from "@/data/TestimonialData";
+import Card from "./TestimonialCard";
 
-interface CardProps {
-  name: string;
-  image: StaticImageData;
-  affiliation: string;
-  text: string;
-}
+const Testimonials = () => {
+  const leftColumn = testimonialData.filter((_, i) => i % 2 === 0);
+  const rightColumn = testimonialData.filter((_, i) => i % 2 === 1);
 
-const Card = ({ name, image, affiliation, text }: CardProps) => {
   return (
-    <div className="border-vsa-green-400 shadow-[6px_6px_0_theme('colors.vsa-green-300')] flex w-3/4 flex-col items-center justify-center rounded-lg border-2 bg-white p-2 md:w-1/5 md:p-4">
-      <div className="x-2 mt-4 flex">
-        <Image
-          src={image}
-          alt="Student Image"
-          className="ml-4 h-28 w-28 rounded-lg object-cover"
-        />
-        <div className="w-32 justify-center p-4 text-left">
-          <p className="text-md font-vsa-main text-vsa-brown justify-center text-center">
-            {name}
-          </p>
-          <p className="font-vsa-alt justify-center p-1 text-center text-xs text-black">
-            {affiliation}
-          </p>
-        </div>
+    <div className="grid grid-cols-2 gap-2 px-50 pb-10">
+      <div className="flex flex-col gap-6">
+        {leftColumn.map((item, index) => (
+          <Card
+            key={index}
+            name={item.name}
+            affiliation={item.affiliation}
+            image={item.image}
+            text={item.text}
+          />
+        ))}
       </div>
-      <div className="w-64 p-4">
-        <p className="font-vsa-alt text-vsa-brown text-sm">{text}</p>
+      <div className="flex flex-col gap-6 pt-40">
+        {rightColumn.map((item, index) => (
+          <Card
+            key={index}
+            name={item.name}
+            affiliation={item.affiliation}
+            image={item.image}
+            text={item.text}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
-export default Card;
+export default Testimonials;
