@@ -25,13 +25,13 @@ const UpcomingEventsSection = () => {
       </div>
       <div className="flex flex-row justify-center gap-10 pt-10">
         <Link
-          className="bg-vsa-pink-100 text-vsa-brown flex w-1/3 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl md:w-1/6"
+          className="bg-vsa-pink-100 hover:bg-vsa-pink-200 text-vsa-brown flex w-1/3 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl transition-colors duration-300 md:w-1/6"
           href="#"
         >
           Shuttling
         </Link>
         <Link
-          className="bg-vsa-green-200 text-vsa-brown flex w-1/3 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl md:w-1/6"
+          className="bg-vsa-green-200 hover:bg-vsa-green-300 text-vsa-brown flex w-1/3 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl transition-colors duration-300 md:w-1/6"
           href="#"
         >
           RSVP
