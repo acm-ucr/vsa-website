@@ -121,11 +121,15 @@ const CalendarDayCell = ({
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="mb-1 flex w-full cursor-pointer rounded-xl bg-black p-1 text-center font-medium transition hover:opacity-60"
-                    onClick={() =>
+                    className="mb-1 flex w-full cursor-pointer bg-vsa-green-300 rounded-xl p-1 text-center font-medium transition hover:opacity-60"
+                    onClick={() => 
                       setCurrent({ title, start, end, location, description })
                     }
-                  />
+                  >
+                    <div className="flex flex-col leading-tight text-black">
+                      <div className="font-semibold truncate">{title}</div>
+                    </div>
+                  </motion.div>
                 );
               }
               return null;
