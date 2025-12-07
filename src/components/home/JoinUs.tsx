@@ -8,8 +8,8 @@ const JoinUS = () => {
   return (
     <motion.div
       className="mx-auto flex w-full flex-col px-4 py-24 sm:max-w-[75vw]"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.25 }}
     >
       <div className="font-vsa-main mb-8 text-left text-4xl font-semibold text-pink-400 sm:text-5xl md:text-6xl lg:text-7xl">
