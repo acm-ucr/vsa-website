@@ -62,7 +62,7 @@ const Events = () => {
           open={Object.keys(current).length > 0}
           onOpenChange={() => setCurrent({})}
         >
-          <DialogContent className="border-vsa-green-200 border-4 p-8">
+          <DialogContent className="border-vsa-green-200 max-w-sm border-4 sm:max-w-2xl sm:p-8">
             <DialogHeader>
               <DialogTitle>
                 <p className="text-4xl font-medium">{current.title}</p>

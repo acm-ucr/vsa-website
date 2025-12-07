@@ -90,14 +90,14 @@ const CalendarDayCell = ({
             <Image
               src={Flower}
               alt="Today Highlight"
-              className="hidden sm:flex absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 p-4"
+              className="absolute top-1/2 left-1/2 hidden h-full w-full -translate-x-1/2 -translate-y-1/2 p-4 sm:flex"
             />
           )}
           <div
             className={`${currentMonth ? "" : "opacity-80"} text-fit top-0 m-1 rounded-xl bg-transparent px-1 text-center md:text-right md:text-xl`}
           >
             {isToday ? (
-              <div className="bg-vsa-pink-100 ml-auto flex h-5 w-5 sm:h-8 sm:w-8 items-center justify-center rounded-full font-semibold text-black">
+              <div className="bg-vsa-pink-100 ml-auto flex h-5 w-5 items-center justify-center rounded-full font-semibold text-black sm:h-8 sm:w-8">
                 {date.getDate()}
               </div>
             ) : (
@@ -126,7 +126,7 @@ const CalendarDayCell = ({
                       setCurrent({ title, start, end, location, description })
                     }
                   >
-                    <div className="hidden md:flex flex-col leading-tight text-black">
+                    <div className="hidden flex-col leading-tight text-black md:flex">
                       <div className="truncate font-semibold">{title}</div>
                     </div>
                   </motion.div>
@@ -245,10 +245,12 @@ function Calendar({
 
           return (
             <div className="text-vsa-pink-300 flex w-full items-start justify-between pb-12">
-              <p className="items-start text-xl sm:text-3xl font-semibold">{year}</p>
+              <p className="items-start text-xl font-semibold sm:text-3xl">
+                {year}
+              </p>
               <div className="flex flex-row items-end">
-                <StepBack 
-                  className="text-vsa-pink-300 size-4 sm:mr-2 mb-2" 
+                <StepBack
+                  className="text-vsa-pink-300 mb-2 size-4 sm:mr-2"
                   onClick={() => {
                     const prevMonth = new Date(currentMonth);
                     prevMonth.setMonth(currentMonth.getMonth() - 1);
@@ -256,11 +258,15 @@ function Calendar({
                   }}
                 />
                 <div className="flex gap-2">
-                  <span className="text-xl sm:text-3xl font-semibold">{monthNumber}</span>
-                  <span className="text-2xl sm:text-4xl font-bold">| {monthName}</span>
+                  <span className="text-xl font-semibold sm:text-3xl">
+                    {monthNumber}
+                  </span>
+                  <span className="text-2xl font-bold sm:text-4xl">
+                    | {monthName}
+                  </span>
                 </div>
-                <StepForward 
-                  className="text-vsa-pink-300 size-4 sm:ml-2 mb-2" 
+                <StepForward
+                  className="text-vsa-pink-300 mb-2 size-4 sm:ml-2"
                   onClick={() => {
                     const nextMonth = new Date(currentMonth);
                     nextMonth.setMonth(currentMonth.getMonth() + 1);
