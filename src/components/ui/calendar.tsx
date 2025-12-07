@@ -90,14 +90,14 @@ const CalendarDayCell = ({
             <Image
               src={Flower}
               alt="Today Highlight"
-              className="absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 p-4"
+              className="hidden sm:flex absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 p-4"
             />
           )}
           <div
             className={`${currentMonth ? "" : "opacity-80"} text-fit top-0 m-1 rounded-xl bg-transparent px-1 text-center md:text-right md:text-xl`}
           >
             {isToday ? (
-              <div className="bg-vsa-pink-100 ml-auto flex h-8 w-8 items-center justify-center rounded-full font-semibold text-black">
+              <div className="bg-vsa-pink-100 ml-auto flex h-5 w-5 sm:h-8 sm:w-8 items-center justify-center rounded-full font-semibold text-black">
                 {date.getDate()}
               </div>
             ) : (
@@ -121,13 +121,13 @@ const CalendarDayCell = ({
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="mb-1 flex w-full cursor-pointer bg-vsa-green-300 rounded-xl p-1 text-center font-medium transition hover:opacity-60"
-                    onClick={() => 
+                    className="bg-vsa-green-300 mb-1 flex w-full cursor-pointer rounded-xl p-1 text-center font-medium transition hover:opacity-60"
+                    onClick={() =>
                       setCurrent({ title, start, end, location, description })
                     }
                   >
-                    <div className="flex flex-col leading-tight text-black">
-                      <div className="font-semibold truncate">{title}</div>
+                    <div className="hidden md:flex flex-col leading-tight text-black">
+                      <div className="truncate font-semibold">{title}</div>
                     </div>
                   </motion.div>
                 );
@@ -153,10 +153,13 @@ function Calendar({
   ...props
 }: CalendarProps) {
   console.log("Calendar events:", events);
+  const [currentMonth, setCurrentMonth] = React.useState(new Date());
 
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
+      month={currentMonth}
+      onMonthChange={setCurrentMonth}
       className={cn(
         "group/calendar w-3/4 p-0 [--cell-size:--spacing(8)] [[data-slot=card-content]_&]:bg-transparent [[data-slot=popover-content]_&]:bg-transparent",
         String.raw`rtl:**:[.rdp-button\_next>svg]:rotate-180`,
@@ -172,9 +175,9 @@ function Calendar({
       classNames={{
         root: cn("w-full max-w-7xl mx-auto"),
         months: cn("flex gap-4 flex-col md:flex-row relative"),
-        month: cn("flex flex-col w-full gap-4"),
+        month: cn("flex flex-col w-full items-center sm:items-stretch gap-4"),
         nav: cn(
-          "flex items-center gap-[68vw] 2xl:gap-[64vw] w-full absolute top-1/2 inset-x-0 justify-center scale-125",
+          "flex items-center w-full hidden justify-between px-4:md px-8 py-2 scale-125",
         ),
         button_previous: cn(
           buttonVariants({ variant: "ghost" }),
@@ -242,11 +245,29 @@ function Calendar({
 
           return (
             <div className="text-vsa-pink-300 flex w-full items-start justify-between pb-12">
-              <p className="text-3xl font-semibold">{year}</p>
-              <p className="flex gap-2">
-                <span className="text-3xl font-semibold">{monthNumber}</span>
-                <span className="text-4xl font-bold">| {monthName}</span>
-              </p>
+              <p className="items-start text-xl sm:text-3xl font-semibold">{year}</p>
+              <div className="flex flex-row items-end">
+                <StepBack 
+                  className="text-vsa-pink-300 size-4 sm:mr-2 mb-2" 
+                  onClick={() => {
+                    const prevMonth = new Date(currentMonth);
+                    prevMonth.setMonth(currentMonth.getMonth() - 1);
+                    setCurrentMonth(prevMonth);
+                  }}
+                />
+                <div className="flex gap-2">
+                  <span className="text-xl sm:text-3xl font-semibold">{monthNumber}</span>
+                  <span className="text-2xl sm:text-4xl font-bold">| {monthName}</span>
+                </div>
+                <StepForward 
+                  className="text-vsa-pink-300 size-4 sm:ml-2 mb-2" 
+                  onClick={() => {
+                    const nextMonth = new Date(currentMonth);
+                    nextMonth.setMonth(currentMonth.getMonth() + 1);
+                    setCurrentMonth(nextMonth);
+                  }}
+                />
+              </div>
             </div>
           );
         },
