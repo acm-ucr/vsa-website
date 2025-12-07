@@ -208,7 +208,7 @@ function Calendar({
           "grid grid-cols-7 text-center text-sm rounded-full bg-vsa-green-200",
         ),
         weekday: cn(
-          "text-muted-foreground rounded-md flex-1 text-2xl select-none text-vsa-green-400",
+          "text-muted-foreground rounded-md flex-1 text-lg sm:text-2xl select-none text-vsa-green-400",
         ),
         week: cn("flex w-full font-vsa-alt text-black font-bold"),
         week_number_header: cn("select-none w-(--cell-size)"),
