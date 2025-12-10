@@ -1,9 +1,12 @@
+"use client";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
+import { motion } from "motion/react";
 
 interface GeneralQuestionProps {
   title: string;
@@ -13,6 +16,12 @@ interface GeneralQuestionProps {
   titleColor: string;
 }
 
+const fadeInAnimation = {
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0, transition: { duration: 0.75 } },
+  viewport: { once: true },
+};
+
 const GeneralQuestions = ({
   title,
   questions,
@@ -21,7 +30,13 @@ const GeneralQuestions = ({
   titleColor,
 }: GeneralQuestionProps) => {
   return (
-    <div className="flex items-center justify-center p-5 md:p-20">
+    <motion.div
+      className="flex items-center justify-center p-5 md:p-20"
+      variants={fadeInAnimation}
+      initial="initial"
+      whileInView="whileInView"
+      viewport={{ once: true }}
+    >
       <div className="w-6xl">
         <div
           className={`${titleColor} mb-4 flex items-center justify-center text-3xl font-extrabold text-nowrap md:text-6xl`}
@@ -47,7 +62,7 @@ const GeneralQuestions = ({
           </Accordion>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
