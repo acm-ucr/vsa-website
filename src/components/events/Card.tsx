@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 interface CardProps {
   title: string;
   location: string;
@@ -16,7 +18,12 @@ const Card = ({
   time,
 }: CardProps) => {
   return (
-    <div className="flex w-full flex-row">
+    <motion.div
+      whileHover={{ scale: 1.08 }}
+      transition={{ duration: 0.4 }}
+      whileTap={{ scale: 0.8 }}
+      className="flex w-full flex-row"
+    >
       <div className="border-vsa-green-400 bg-vsa-green-300 flex w-1/4 flex-col justify-center rounded-l-md border-2 p-1 text-center text-white">
         <p className="text-3xl font-bold">{month}</p>
         <p className="text-3xl font-bold">{day}</p>
@@ -29,7 +36,7 @@ const Card = ({
           {description}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
