@@ -21,10 +21,15 @@ const popAnimation: Variants = {
 
 const Socials = () => {
   return (
-    <div className="bg-vsa-yellow-100 flex flex-col items-center justify-center p-10 md:p-23">
-      <h1 className="text-vsa-pink-300 text-3xl font-bold">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 10 }}
+      transition={{ duration: 0.3 }}
+      className="bg-vsa-yellow-100 flex flex-col items-center justify-center p-10 md:p-23"
+    >
+      <p className="text-vsa-pink-300 text-3xl font-bold">
         Check Our Socials Out!
-      </h1>
+      </p>
       <p className="font-vsa-alt w-5/6 pt-5 text-center md:w-3/5">
         Kick off the school year with the Vietnamese Student Association at our
         annual VSA Social during Week 0! Whether you're a returning student or
@@ -39,6 +44,7 @@ const Socials = () => {
           variants={popAnimation}
           initial="initial"
           whileInView="whileInView"
+          whileHover={{ scale: 1.1 }}
         >
           <Link href="https://www.google.com/" target="_blank">
             <FaInstagram className="fill-vsa-pink-200 m-7 mb-10 size-20 md:size-35" />
@@ -48,6 +54,7 @@ const Socials = () => {
           variants={popAnimation}
           initial="initial"
           whileInView="whileInView"
+          whileHover={{ scale: 1.1 }}
         >
           <Link href="https://www.google.com/" target="_blank">
             <FaDiscord className="fill-vsa-pink-200 m-7 mb-10 size-20 md:size-35" />
@@ -57,13 +64,14 @@ const Socials = () => {
           variants={popAnimation}
           initial="initial"
           whileInView="whileInView"
+          whileHover={{ scale: 1.1 }}
         >
           <Link href="https://www.google.com/" target="_blank">
             <FaTiktok className="fill-vsa-pink-200 m-7 mb-10 size-20 md:size-35" />
           </Link>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
