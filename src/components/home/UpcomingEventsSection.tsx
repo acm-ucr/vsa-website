@@ -5,8 +5,8 @@ import { HomeUpcomingEventsInfo } from "@/data/HomeUpcomingEvents/UpcomingEvents
 
 import { motion } from "motion/react";
 const fadeInAnimation = {
-  initial: { opacity: 0 },
-  whileInView: { opacity: 1, transition: { duration: 1.25 } },
+  initial: { opacity: 0, y:10 },
+  whileInView: { opacity: 1, y:0, transition: { duration: 0.5 } },
 };
 
 const UpcomingEventsSection = () => {
@@ -55,14 +55,14 @@ const UpcomingEventsSection = () => {
         whileInView="whileInView"
       >
         <motion.div
-          className="bg-vsa-pink-100 hover:bg-vsa-pink-200 text-vsa-brown flex w-1/3 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl transition-colors duration-300 md:w-1/6"
+          className="bg-vsa-pink-100 cursor-pointer hover:bg-vsa-pink-200 text-vsa-brown flex w-1/3 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl transition-colors duration-300 md:w-1/6"
           variants={fadeInAnimation}
         >
           <Link href="#">Shuttling</Link>
         </motion.div>
 
         <motion.div
-          className="bg-vsa-green-200 hover:bg-vsa-green-300 text-vsa-brown flex w-1/3 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl transition-colors duration-300 md:w-1/6"
+          className="bg-vsa-green-200 cursor-pointer hover:bg-vsa-green-300 text-vsa-brown flex w-1/3 items-center justify-center rounded-2xl border-2 border-black p-4 text-2xl shadow-xl transition-colors duration-300 md:w-1/6"
           variants={fadeInAnimation}
         >
           <Link href="#">RSVP</Link>
