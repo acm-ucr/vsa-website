@@ -33,6 +33,7 @@ const MajorEventLeft = ({ images, title, description }: ProjectsProps) => {
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.25 }}
+      viewport={{ once: true }}
     >
       <div className="flex w-1/4 flex-col items-center justify-center md:mt-10">
         <Carousel setApi={setApi} opts={{}}>

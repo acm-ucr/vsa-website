@@ -33,6 +33,7 @@ const MajorEventRight = ({ images, title, description }: ProjectsProps) => {
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.25 }}
+      viewport={{ once: true }}
     >
       <div className="flex w-full flex-col items-center justify-center md:w-2/5">
         <div className="font-vsa-main text-vsa-pink-300 w-full p-4 text-center text-3xl font-bold md:w-2xl md:p-6 md:pr-10 md:text-4xl">

@@ -10,6 +10,7 @@ const MajorEventsHeader = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.25 }}
+      viewport={{ once: true }}
     >
       <div className="text-vsa-green-300 font-vsa-main text-3xl font-semibold sm:text-3xl md:text-4xl">
         Our Major Events
