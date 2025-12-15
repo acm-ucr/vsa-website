@@ -85,14 +85,13 @@ const CalendarDayCell = ({
         viewport={{ once: true, amount: 0.2 }}
         className={`${isToday ? "" : currentMonth ? "bg-transparent" : "text-vsa-green-300"} no-scrollbar border-vsa-green-300 group m-1 flex max-h-[200px] min-h-[100px] flex-col items-end overflow-y-auto border-r-3 border-b-3 md:min-h-[150px] lg:min-h-[200px]`}
       >
-        <div className="group-hover:bg-vsa-green-500 relative w-full flex-1 transition-colors group-hover:rounded-xl">
-          {isToday && (
-            <Image
-              src={Flower}
-              alt="Today Highlight"
-              className="absolute top-1/2 left-1/2 hidden h-full w-full -translate-x-1/2 -translate-y-1/2 p-4 sm:flex"
-            />
+        <div
+          className={cn(
+            "group-hover:bg-vsa-green-500 relative w-full flex-1 transition-colors group-hover:rounded-xl",
+            isToday &&
+              "bg-none bg-contain bg-center bg-no-repeat sm:bg-[url('/small_lotus.svg')]",
           )}
+        >
           <div
             className={`${currentMonth ? "" : "opacity-80"} text-fit top-0 m-1 rounded-xl bg-transparent px-1 text-center md:text-right md:text-xl`}
           >
@@ -121,7 +120,7 @@ const CalendarDayCell = ({
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="bg-vsa-green-300 mb-1 flex w-full cursor-pointer rounded-xl p-1 text-center font-medium transition hover:opacity-60"
+                    className="bg-vsa-green-300 z-10 mb-1 flex w-full cursor-pointer rounded-xl p-1 text-center font-medium transition hover:opacity-60"
                     onClick={() =>
                       setCurrent({ title, start, end, location, description })
                     }
