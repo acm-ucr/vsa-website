@@ -29,7 +29,7 @@ const MajorEventRight = ({ images, title, description }: ProjectsProps) => {
 
   return (
     <motion.div
-      className="flex w-full flex-col items-center justify-center gap-8 md:flex-row md:gap-10"
+      className="my-3 flex w-full flex-col items-center justify-center gap-8 md:flex-row md:gap-10"
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.25 }}
@@ -43,16 +43,16 @@ const MajorEventRight = ({ images, title, description }: ProjectsProps) => {
           {description}
         </div>
       </div>
-      <div className="flex w-1/4 flex-col items-center justify-center md:mt-10">
+      <div className="flex w-10/12 flex-col items-center justify-center md:mt-10 md:w-1/4">
         <Carousel setApi={setApi} opts={{}}>
           <CarouselContent>
             {Array.from({ length: images.length }).map((_, index) => (
               <CarouselItem key={index}>
-                <div className="flex h-[60vh] max-h-[60vh] items-center justify-center">
+                <div className="flex max-h-[60vh] items-center justify-center md:h-[60vh]">
                   <Image
                     src={images[index]}
                     alt={title}
-                    className="max-h-[60vh] max-w-full object-contain"
+                    className="aspect-video max-h-[60vh] max-w-full object-cover"
                   />
                 </div>
               </CarouselItem>

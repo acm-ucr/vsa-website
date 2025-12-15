@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 const JoinUS = () => {
   return (
     <motion.div
-      className="mx-auto flex w-full flex-col px-4 py-24 sm:max-w-[75vw]"
+      className="mx-auto flex w-10/12 flex-col py-24 sm:max-w-[75vw]"
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.25 }}
@@ -30,7 +30,7 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="mx-auto w-9/10 object-contain py-5 shadow-lg sm:hidden"
+            className="mx-auto w-9/10 object-contain py-5 sm:hidden"
           />
 
           <p>
@@ -48,7 +48,7 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="hidden h-auto w-full object-contain shadow-lg sm:block sm:max-w-[60vw] md:max-w-[50vw] lg:max-w-[40vw] xl:max-w-[45vw] 2xl:max-w-xl"
+            className="hidden h-auto w-full object-contain sm:block sm:max-w-[60vw] md:max-w-[50vw] lg:max-w-[40vw] xl:max-w-[45vw] 2xl:max-w-xl"
           />
 
           <motion.div whileHover={{ scale: 1.05 }}>

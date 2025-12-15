@@ -90,7 +90,7 @@ const Events = () => {
           </DialogContent>
         </Dialog>
       )}
-      <div className="border-vsa-green-400 mx-auto my-12 flex w-full flex-col rounded-xl border-4 bg-white p-16 pb-12">
+      <div className="border-vsa-green-400 mx-auto my-12 flex w-full flex-col rounded-xl border-4 bg-white p-16 pb-12 md:w-10/12">
         <div className="mb-4 flex justify-center">
           <Image src={CalendarHeader} alt="Calendar image" className="" />
         </div>
