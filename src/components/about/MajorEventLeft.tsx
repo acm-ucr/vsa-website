@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { motion } from "motion/react";
 import {
   Carousel,
   CarouselContent,
@@ -27,7 +28,13 @@ const MajorEventLeft = ({ images, title, description }: ProjectsProps) => {
   }, [api]);
 
   return (
-    <div className="flex w-full flex-col-reverse items-center justify-center gap-8 md:flex-row md:gap-10">
+    <motion.div
+      className="flex w-full flex-col-reverse items-center justify-center gap-8 md:flex-row md:gap-10"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.25 }}
+      viewport={{ once: true }}
+    >
       <div className="flex w-1/4 flex-col items-center justify-center md:mt-10">
         <Carousel setApi={setApi} opts={{}}>
           <CarouselContent>
@@ -68,7 +75,7 @@ const MajorEventLeft = ({ images, title, description }: ProjectsProps) => {
           {description}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
