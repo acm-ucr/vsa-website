@@ -8,9 +8,6 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import * as motion from "motion/react-client";
 
-import Image from "next/image";
-import Flower from "@/public/small_lotus.svg";
-
 const slideUp = {
   hidden: { opacity: 0, y: 5 },
   show: { opacity: 1, y: 0 },
