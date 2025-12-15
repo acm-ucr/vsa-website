@@ -12,14 +12,12 @@ const MajorEventsHeader = () => {
       transition={{ duration: 1.25 }}
       viewport={{ once: true }}
     >
-      <div className="text-vsa-green-300 font-vsa-main text-3xl font-semibold sm:text-3xl md:text-4xl">
+      <p className="text-vsa-green-300 font-vsa-main text-3xl font-semibold sm:text-3xl md:text-4xl">
         Our Major Events
-      </div>
-
-      <div className="text-vsa-brown font-vsa-alt w-9/10 text-sm sm:w-4/5 md:text-xl">
+      </p>
+      <p className="text-vsa-brown font-vsa-alt w-9/10 text-sm sm:w-4/5 md:text-xl">
         Here are some events to expect every year!
-      </div>
-
+      </p>
       <Image
         src={headerImage}
         alt="About VSA Decoration"

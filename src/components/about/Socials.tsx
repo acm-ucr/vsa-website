@@ -19,6 +19,13 @@ const popAnimation: Variants = {
   },
 };
 
+const icons = [
+  {icon: <FaInstagram className="text-vsa-pink-200 mb-10 size-20 md:size-35" />,
+     link: "https://www.instagram.com/vsa.ucsd/"},
+  {icon: <FaDiscord className="text-vsa-pink-200 mb-10 size-20 md:size-35" />, link: "https://discord.com/invite/vsa-ucsd"},
+  {icon: <FaTiktok className="text-vsa-pink-200 mb-10 size-20 md:size-35" />, link: "https://www.tiktok.com/@vsa_ucsd"},
+]
+
 const Socials = () => {
   return (
     <motion.div
@@ -40,36 +47,20 @@ const Socials = () => {
         get involved throughout the year.
       </p>
       <div className="mt-5 flex flex-row gap-5">
-        <motion.div
+        {icons.map(({link, icon}, index) => (
+          <motion.div
           variants={popAnimation}
           initial="initial"
           whileInView="whileInView"
           whileHover={{ scale: 1.1 }}
+          key={index}
         >
-          <Link href="https://www.google.com/" target="_blank">
-            <FaInstagram className="fill-vsa-pink-200 mb-10 size-20 md:size-35" />
-          </Link>
-        </motion.div>
-        <motion.div
-          variants={popAnimation}
-          initial="initial"
-          whileInView="whileInView"
-          whileHover={{ scale: 1.1 }}
-        >
-          <Link href="https://www.google.com/" target="_blank">
-            <FaDiscord className="fill-vsa-pink-200 mb-10 size-20 md:size-35" />
-          </Link>
-        </motion.div>
-        <motion.div
-          variants={popAnimation}
-          initial="initial"
-          whileInView="whileInView"
-          whileHover={{ scale: 1.1 }}
-        >
-          <Link href="https://www.google.com/" target="_blank">
-            <FaTiktok className="fill-vsa-pink-200 mb-10 size-20 md:size-35" />
-          </Link>
-        </motion.div>
+            <Link href={link} target="_blank">
+              {icon}
+            </Link>
+
+          </motion.div>
+        ))}
       </div>
     </motion.div>
   );
