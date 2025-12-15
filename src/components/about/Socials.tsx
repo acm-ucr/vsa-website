@@ -20,11 +20,21 @@ const popAnimation: Variants = {
 };
 
 const icons = [
-  {icon: <FaInstagram className="text-vsa-pink-200 mb-10 size-20 md:size-35" />,
-     link: "https://www.instagram.com/vsa.ucsd/"},
-  {icon: <FaDiscord className="text-vsa-pink-200 mb-10 size-20 md:size-35" />, link: "https://discord.com/invite/vsa-ucsd"},
-  {icon: <FaTiktok className="text-vsa-pink-200 mb-10 size-20 md:size-35" />, link: "https://www.tiktok.com/@vsa_ucsd"},
-]
+  {
+    icon: (
+      <FaInstagram className="text-vsa-pink-200 mb-10 size-20 md:size-35" />
+    ),
+    link: "https://www.instagram.com/vsa.ucsd/",
+  },
+  {
+    icon: <FaDiscord className="text-vsa-pink-200 mb-10 size-20 md:size-35" />,
+    link: "https://discord.com/invite/vsa-ucsd",
+  },
+  {
+    icon: <FaTiktok className="text-vsa-pink-200 mb-10 size-20 md:size-35" />,
+    link: "https://www.tiktok.com/@vsa_ucsd",
+  },
+];
 
 const Socials = () => {
   return (
@@ -47,18 +57,17 @@ const Socials = () => {
         get involved throughout the year.
       </p>
       <div className="mt-5 flex flex-row gap-5">
-        {icons.map(({link, icon}, index) => (
+        {icons.map(({ link, icon }, index) => (
           <motion.div
-          variants={popAnimation}
-          initial="initial"
-          whileInView="whileInView"
-          whileHover={{ scale: 1.1 }}
-          key={index}
-        >
+            variants={popAnimation}
+            initial="initial"
+            whileInView="whileInView"
+            whileHover={{ scale: 1.1 }}
+            key={index}
+          >
             <Link href={link} target="_blank">
               {icon}
             </Link>
-
           </motion.div>
         ))}
       </div>
