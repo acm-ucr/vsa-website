@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "motion/react";
 import Image, { StaticImageData } from "next/image";
 
 interface GalleryGridProp {
@@ -8,7 +8,12 @@ interface GalleryGridProp {
 
 const GridCard = ({ images }: GalleryGridProp) => {
   return (
-    <div className="flex flex-wrap place-content-center gap-3 pt-8">
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4 }}
+      className="flex flex-wrap place-content-center gap-3 pt-8"
+    >
       {images.map((image, index) => (
         <Image
           src={image}
@@ -17,7 +22,7 @@ const GridCard = ({ images }: GalleryGridProp) => {
           className="aspect-[3/2] w-47/100 object-cover"
         />
       ))}
-    </div>
+    </motion.div>
   );
 };
 

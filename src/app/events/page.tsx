@@ -36,24 +36,24 @@ const Events = () => {
             ),
           )}
         </EventsBoard>
-        <EventsBoard title="Past Events" text="text-vsa-green-300">
-          {PastEvents.map(
-            ({ title, location, description, month, day, time }, index) => (
-              <Card
-                key={index}
-                title={title}
-                location={location}
-                description={description}
-                month={month}
-                day={day}
-                time={time}
-              />
-            ),
-          )}
-        </EventsBoard>
       </Motion.div>
-      <GalleryButton></GalleryButton>
+      <GalleryButton />
       <Calendar />
+      <EventsBoard title="Past Events" text="text-vsa-green-300">
+        {PastEvents.map(
+          ({ title, location, description, month, day, time }, index) => (
+            <Card
+              key={index}
+              title={title}
+              location={location}
+              description={description}
+              month={month}
+              day={day}
+              time={time}
+            />
+          ),
+        )}
+      </EventsBoard>
     </div>
   );
 };

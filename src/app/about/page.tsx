@@ -10,10 +10,11 @@ import { MajorEvents } from "@/data/Events/MajorEventsInfo";
 
 const About = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
+      <p className="text-vsa-green-400 m-8 text-4xl font-black">About</p>
       <MajorEventsHeader />
 
-      <div className="mx-auto flex w-full flex-col items-center py-20">
+      <div className="mx-auto flex w-full flex-col items-center py-5">
         {MajorEvents.map((event, index) => {
           const Component = index % 2 === 0 ? MajorEventLeft : MajorEventRight;
           return (
