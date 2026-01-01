@@ -23,7 +23,7 @@ const Card = ({
       <div className="bg-vsa-green-300 border-vsa-green-400 flex w-1/5 place-items-center rounded-l-2xl border-3 p-2 text-center text-white md:p-7">
         <Link
           href={link}
-          className="font-vsa-main text-xs font-black break-words hover:underline md:text-4xl"
+          className="font-vsa-main text-xs font-black break-words hover:scale-105 hover:underline md:text-4xl"
         >
           click here to see full gallery
           <p className="font-vsa-alt text-center text-sm font-black italic md:text-5xl">

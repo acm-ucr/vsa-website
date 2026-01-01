@@ -1,10 +1,17 @@
+"use client";
 import Image from "next/image";
 import logo from "@/public/VSA_logo.svg";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const JoinUS = () => {
   return (
-    <div className="mx-auto flex w-full flex-col px-4 py-24 sm:max-w-[75vw]">
+    <motion.div
+      className="mx-auto flex w-10/12 flex-col py-24 sm:max-w-[75vw]"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.25 }}
+    >
       <div className="font-vsa-main mb-8 text-left text-4xl font-semibold text-pink-400 sm:text-5xl md:text-6xl lg:text-7xl">
         Looking to Join?
       </div>
@@ -23,7 +30,7 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="mx-auto w-9/10 object-contain py-5 shadow-lg sm:hidden"
+            className="mx-auto w-9/10 object-contain py-5 sm:hidden"
           />
 
           <p>
@@ -41,18 +48,20 @@ const JoinUS = () => {
           <Image
             src={logo}
             alt="VSA Logo"
-            className="hidden h-auto w-full object-contain shadow-lg sm:block sm:max-w-[60vw] md:max-w-[50vw] lg:max-w-[40vw] xl:max-w-[45vw] 2xl:max-w-xl"
+            className="hidden h-auto w-full object-contain sm:block sm:max-w-[60vw] md:max-w-[50vw] lg:max-w-[40vw] xl:max-w-[45vw] 2xl:max-w-xl"
           />
 
-          <Link
-            href="#"
-            className="font-vsa-alt text-vsa-brown bg-vsa-pink-100 hover:bg-vsa-pink-200 cursor-pointer rounded-3xl border-2 border-black px-8 py-4 text-base font-semibold shadow-lg transition-colors duration-300 sm:text-lg md:text-xl lg:text-2xl"
-          >
-            Membership Form
-          </Link>
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Link
+              href="#"
+              className="font-vsa-alt text-vsa-brown bg-vsa-pink-100 hover:bg-vsa-pink-200 cursor-pointer rounded-3xl border-2 border-black px-8 py-4 text-base font-semibold shadow-lg transition-colors duration-300 sm:text-lg md:text-xl lg:text-2xl"
+            >
+              Membership Form
+            </Link>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

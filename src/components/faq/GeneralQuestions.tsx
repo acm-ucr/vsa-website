@@ -1,9 +1,12 @@
+"use client";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
+import { motion } from "motion/react";
 
 interface GeneralQuestionProps {
   title: string;
@@ -13,6 +16,12 @@ interface GeneralQuestionProps {
   titleColor: string;
 }
 
+const fadeInAnimation = {
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0, transition: { duration: 0.75 } },
+  viewport: { once: true },
+};
+
 const GeneralQuestions = ({
   title,
   questions,
@@ -21,14 +30,20 @@ const GeneralQuestions = ({
   titleColor,
 }: GeneralQuestionProps) => {
   return (
-    <div className="flex items-center justify-center p-20">
+    <motion.div
+      className="flex items-center justify-center p-5 md:p-20"
+      variants={fadeInAnimation}
+      initial="initial"
+      whileInView="whileInView"
+      viewport={{ once: true }}
+    >
       <div className="w-6xl">
         <div
-          className={`${titleColor} mb-4 flex items-center justify-center p-6 text-6xl font-semibold`}
+          className={`${titleColor} mb-4 flex items-center justify-center text-3xl font-extrabold text-nowrap md:text-6xl`}
         >
           {title}
         </div>
-        <div className="border-vsa-green-400 border-x-2 border-b-2">
+        <div className="border-vsa-green-400 mt-12 border-x-2 border-b-2">
           <Accordion type="single" collapsible className="w-full">
             {questions.map((question, i) => (
               <AccordionItem
@@ -36,18 +51,18 @@ const GeneralQuestions = ({
                 value={`item-${i}`}
                 className={` ${i % 2 === 1 ? color : "bg-vsa-yellow-100"}`}
               >
-                <AccordionTrigger className="text-vsa-brown cursor-pointer flex-row-reverse items-center justify-end rounded-none border-t-2 border-black text-3xl hover:no-underline [&>svg]:h-12 [&>svg]:w-12">
+                <AccordionTrigger className="text-vsa-brown cursor-pointer flex-row-reverse items-center justify-end rounded-none border-t-2 border-black pl-2 text-sm hover:no-underline md:text-3xl [&>svg]:h-6 [&>svg]:w-6 md:[&>svg]:h-12 md:[&>svg]:w-12">
                   {i + 1}. {question}
                 </AccordionTrigger>
-                <AccordionContent className="text-vsa-brown flex gap-4 border-t-2 border-black bg-white p-2 text-3xl">
-                  <div className="ml-12 p-4">{answers[i]}</div>
+                <AccordionContent className="text-vsa-brown flex gap-4 border-t-2 border-black bg-white p-2 text-sm md:text-3xl">
+                  <div className="p-4 md:ml-12">{answers[i]}</div>
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
