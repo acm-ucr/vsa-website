@@ -10,7 +10,7 @@ const fadeInAnimation = {
 const Landing = () => {
   return (
     <motion.div
-      className="bg-vsa-yellow-100 relative flex h-full w-full items-center justify-center overflow-hidden"
+      className="relative flex h-full w-full items-center justify-center overflow-hidden"
       variants={fadeInAnimation}
       initial="initial"
       whileInView="whileInView"

@@ -53,7 +53,8 @@ const JoinUS = () => {
 
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link
-              href="#"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdJ3qglnd-7Y3gTO6q5kwjeHvclKR9o6DVS0rrD0wckFy4EtQ/viewform"
+              target="_blank"
               className="font-vsa-alt text-vsa-brown bg-vsa-pink-100 hover:bg-vsa-pink-200 cursor-pointer rounded-3xl border-2 border-black px-8 py-4 text-base font-semibold shadow-lg transition-colors duration-300 sm:text-lg md:text-xl lg:text-2xl"
             >
               Membership Form

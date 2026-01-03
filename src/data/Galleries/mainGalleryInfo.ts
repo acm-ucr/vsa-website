@@ -6,10 +6,6 @@ import culturenightImage1 from "@/public/gallery/vietculturenight/culturenight9.
 import culturenightImage2 from "@/public/gallery/vietculturenight/culturenight7.webp";
 import welcomeweekImage1 from "@/public/gallery/welcomeweek/welcomeweek2.webp";
 import welcomeweekImage2 from "@/public/gallery/welcomeweek/welcomeweek5.webp";
-import socialImage1 from "@/public/gallery/social/social6.webp";
-import socialImage2 from "@/public/gallery/social/social7.webp";
-
-import VSAIcon from "@/public/VSA_logo.svg";
 
 export const galleryEvents = [
   {
@@ -38,27 +34,11 @@ export const galleryEvents = [
     rightalt: "stage photo girls",
   },
   {
-    title: "Viet Idol",
-    link: "/gallery/vietidol",
-    leftimage: VSAIcon,
-    rightimage: VSAIcon,
-    leftalt: "placeholder",
-    rightalt: "placeholder",
-  },
-  {
     title: "Welcome Week",
     link: "/gallery/welcomeweek",
     leftimage: welcomeweekImage1,
     rightimage: welcomeweekImage2,
     leftalt: "welcome photo",
     rightalt: "welcome group photo",
-  },
-  {
-    title: "Social",
-    link: "/gallery/social",
-    leftimage: socialImage2,
-    rightimage: socialImage1,
-    leftalt: "social activity",
-    rightalt: "family photo",
   },
 ];
