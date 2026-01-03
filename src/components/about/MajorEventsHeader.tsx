@@ -6,13 +6,13 @@ import { motion } from "motion/react";
 const MajorEventsHeader = () => {
   return (
     <motion.div
-      className="flex flex-col items-center justify-center gap-2 py-8 text-center md:gap-8 md:px-4"
+      className="flex flex-col items-center justify-center gap-1 py-4 text-center md:gap-8 md:px-4"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.25 }}
       viewport={{ once: true }}
     >
-      <p className="text-vsa-green-300 font-vsa-main text-3xl font-semibold sm:text-3xl md:text-4xl">
+      <p className="text-vsa-green-300 font-vsa-main text-2xl font-semibold sm:text-3xl md:text-4xl">
         Our Major Events
       </p>
       <p className="text-vsa-brown font-vsa-alt w-9/10 text-sm sm:w-4/5 md:text-xl">

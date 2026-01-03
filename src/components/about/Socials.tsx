@@ -24,15 +24,15 @@ const icons = [
     icon: (
       <FaInstagram className="text-vsa-pink-200 mb-10 size-20 md:size-35" />
     ),
-    link: "https://www.instagram.com/vsa.ucsd/",
+    link: "https://www.instagram.com/ucrvsa",
   },
   {
     icon: <FaDiscord className="text-vsa-pink-200 mb-10 size-20 md:size-35" />,
-    link: "https://discord.com/invite/vsa-ucsd",
+    link: "https://discord.com/invite/9kxFtEUtZE",
   },
   {
     icon: <FaTiktok className="text-vsa-pink-200 mb-10 size-20 md:size-35" />,
-    link: "https://www.tiktok.com/@vsa_ucsd",
+    link: "https://www.tiktok.com/@ucrvsa",
   },
 ];
 
